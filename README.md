@@ -4,4 +4,4 @@ Credit:\
 BootStrap GrayScale Theme\
 Vincent Garreau's particles.js
 
-Design from the [HackJPS 2020 Website](https://github.com/Aditya-Chakka/HackJPS-Landing-Page)
+Design inspired by the [HackJPS 2020 Website](https://github.com/Aditya-Chakka/HackJPS-Landing-Page)
