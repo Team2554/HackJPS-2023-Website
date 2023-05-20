@@ -1,0 +1,6 @@
+@media not all and (min-width: 640px) {
+    canvas.particles-js-canvas-el {
+        transform: translateY(-100%);
+        z-index: 0;
+    }
+}

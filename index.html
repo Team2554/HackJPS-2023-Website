@@ -1,392 +1,400 @@
 <!DOCTYPE html>
 <html style="scroll-behavior: smooth">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <meta property="og:title" content="HackJPS 2023" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="assets/hackjps/LOGO.png" />
-    <meta
-      property="og:description"
-      content="A beginner-friendly hybrid hackathon hosted by students of JPS High School in Edison, NJ. Open to all middle and high school students aged 13+."
-    />
-    <meta name="theme-color" content="#68a444" />
-    <title>HackJPS 2023</title>
-    <link rel="icon" type="image/x-icon" href="assets/LOGO.png" />
-    <script
-      src="https://kit.fontawesome.com/d02c422378.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdn.tailwindcss.com"></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <meta property="og:title" content="HackJPS 2023" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/hackjps/LOGO.png" />
+  <meta property="og:description"
+    content="A beginner-friendly hybrid hackathon hosted by students of JPS High School in Edison, NJ. Open to all middle and high school students aged 13+." />
+  <meta name="theme-color" content="#68a444" />
+  <title>HackJPS 2023</title>
+  <link rel="icon" type="image/x-icon" href="assets/LOGO.png" />
+  <script src="https://kit.fontawesome.com/d02c422378.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
 
-  <body style="font-family: 'Georama', sans-serif" id="page-top">
-    <nav
-      id="nav-fixed"
-      class="p-5 fixed w-full top-0 border-slate-200 select-none flex justify-between items-center z-50 text-slate-100"
-    >
-      <div class="flex flex-row items-center">
-        <img
-          class="w-16 inline"
-          src="assets/LOGO.png"
-          alt="HackJPS 2023 Logo"
-        />
-        <a href="#page-top"
-          ><span class="font-semibold text-2xl ml-2">HackJPS 2023</span></a
-        >
-      </div>
-      <div class="text-xl font-semibold mr-8 flex flex-row space-x-10">
-        <p><a href="#about">About</a></p>
-        <p><a href="#sponsors">Sponsors</a></p>
-        <p><a href="#contact">Contact</a></p>
-      </div>
-    </nav>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
 
-    <section class="bg-green-600 h-screen" id="particles-js">
-      <div class="absolute text-center w-full" style="top: 8%">
-        <img
-          class="w-1/3 inline"
-          src="assets/LOGO.png"
-          alt="HackJPS 2023 Logo"
-        />
+  <link rel="stylesheet" href="/particles/particles.css">
+  <link rel="stylesheet" href="/assets/mobile-navbar.css">
+</head>
+
+<body style="font-family: 'Georama', sans-serif" id="page-top">
+  <nav id="nav-fixed"
+    class="hidden lg:flex lg:p-5 fixed w-full top-0 border-slate-200 select-none justify-between items-center z-50 text-slate-100">
+    <div class="flex flex-row items-center">
+      <img class="w-16 inline" src="assets/LOGO.png" alt="HackJPS 2023 Logo" />
+      <a href="#page-top"><span class="font-semibold text-2xl ml-2">HackJPS 2023</span></a>
+    </div>
+    <div class="text-xl font-semibold mr-8 flex flex-row space-x-10">
+      <p><a href="#about">About</a></p>
+      <p><a href="#sponsors">Sponsors</a></p>
+      <p><a href="#contact">Contact</a></p>
+    </div>
+  </nav>
+
+  <nav id="mobile-navbar" class="lg:hidden">
+    <button class="absolute text-white w-8 text-2xl translate-x-7 translate-y-6 z-[70]" type="button"
+      data-collapse-toggle="mobile-navbar-default" id="mobile-navbar-hamburger">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <div id="mobile-navbar-default" class="hidden absolute h-screen w-3/5 md:w-2/5 bg-gray-50 z-50 px-8 pt-4">
+      <a href="#about" class="block mobile-nav-link text-xl md:text-2xl mt-14"><span>About</span></a>
+      <a href="#sponsors" class="block mobile-nav-link text-xl md:text-2xl mt-4"><span>Sponsors</span></a>
+      <a href="#contact" class="block mobile-nav-link text-xl md:text-2xl mt-4"><span>Contact</span></a>
+    </div>
+
+    <div id="mobile-navbar-backdrop" class="bg-black w-screen h-screen absolute z-40 opacity-50 hidden"></div>
+  </nav>
+
+  <section class="bg-green-600 md:h-screen md:pt-0 pt-4 h-[105vh]" id="particles-js">
+    <div class="md:absolute text-center w-full h-full z-20" style="top: 8%">
+      <img class="w-1/5 md:w-[30%] inline" src="assets/LOGO.png" alt="HackJPS 2023 Logo" />
+      <h1
+        class="uppercase text-9xl font-medium mt-3 bg-gradient-to-b from-yellow-500 to-green-500 text-transparent bg-clip-text hidden md:block">
+        HackJPS 2023
+      </h1>
+
+
+      <div class="md:hidden z-20">
         <h1
-          class="uppercase text-9xl font-medium mt-3 bg-gradient-to-b from-yellow-500 to-green-500 text-transparent bg-clip-text"
-        >
-          HackJPS 2023
+          class="uppercase text-7xl md:text-9xl font-medium mt-3 bg-gradient-to-b from-yellow-500 to-green-500 text-transparent bg-clip-text">
+          Hack
         </h1>
-        <p class="mt-5 text-2xl text-slate-100">
-          Hosted in person and virtually at John P. Stevens High School from
-          June 3rd to June 4th
-        </p>
-        <div class="text-white text-xl mt-10">
-          <a
-            href="https://hackjps-2023.devpost.com/"
-            target="_blank"
-            class="bg-slate-400 hover:bg-slate-500 px-6 py-3 rounded mr-3 drop-shadow"
-          >
-            <i class="fa-solid fa-code"></i> Devpost
-          </a>
-          <a
-            href="https://discord.gg/aUWPAmx9tk"
-            target="_blank"
-            class="bg-slate-400 hover:bg-slate-500 px-6 py-3 rounded mx-3 drop-shadow"
-          >
-            <i class="fa-brands fa-discord"></i> Discord
-          </a>
-          <a
-            href="https://forms.gle/1ULsw2rBsMmMZr4Y7"
-            target="_blank"
-            class="bg-slate-400 hover:bg-slate-500 px-6 py-3 rounded ml-3 drop-shadow"
-          >
-            <i class="fa-solid fa-arrow-right"></i> Register
-          </a>
-        </div>
+        <h1
+          class="uppercase text-7xl md:text-9xl font-medium mt-3 bg-gradient-to-b from-yellow-500 to-green-500 text-transparent bg-clip-text">
+          JPS
+        </h1>
+        <h1
+          class="uppercase text-7xl md:text-9xl font-medium mt-3 bg-gradient-to-b from-yellow-500 to-green-500 text-transparent bg-clip-text">
+          2023
+        </h1>
       </div>
-    </section>
 
-    <section class="bg-yellow-200 px-52 py-20" id="about">
-      <h2 class="text-center pt-32 text-4xl">About Us</h2>
-      <p
-        class="mt-5 text-yellow-800 text-xl border-b-2 pb-10 border-yellow-800"
-      >
-        HackJPS will be a hybrid (in person & virtual) hackathon hosted by
-        students of John P. Stevens High School in Edison, NJ during the weekend
-        of <b>June 3rd, 2023</b>. This is an official event conducted with the
-        permission of JPS administration. HackJPS was first hosted virtually in
-        2020 with over <b>300 participants</b>, and was a great success. <br />
-        <br />
-
-        Participation will be open to
-        <b>middle and high school students</b> (aged 13+) from Edison as well as
-        from other locations or school districts. Participants may have
-        <b>any level of experience, or none at all</b>. We are welcoming to
-        beginners and experts alike! <br /><br />
-
-        Additionally, participants will be able to attend in-person or virtual
-        <b>workshops</b> hosted by sponsors or student organizations, exposing
-        them to a multitude of other topics that might interest them.
+      <p class="mt-5 lg:mt-1 xl:mt-5 text-2xl text-slate-100 px-4 lg:px-0">
+        Hosted in person and virtually at John P. Stevens High School from
+        June 3rd to June 4th
       </p>
-      <h2 class="text-center pt-12 text-4xl">FAQ</h2>
-      <div class="mt-5 text-yellow-800 text-xl pb-10">
-        <p class="font-medium text-2xl">What is a hackathon?</p>
-        <p>
-          A <b>hackathon</b> is a competition (usually taking place on a
-          weekend) in which student programmers get together, form small teams,
-          and compete to create the best projects they can within the given
-          amount of time. Hackathons may offer prizes (often contributed by
-          sponsors) for the overall best project as well as the best projects in
-          multiple specific categories. <br /><br />
-
-          Hackathons are designed to bring young people together around a common
-          interest in technology and further develop that interest by allowing
-          them to enjoy themselves while gaining valuable experience. Attendees
-          often make new friends, gain new skills, and have a great time
-          together. Hackathons are especially valuable for those with less
-          experience because they are introduced to peers and mentors who are
-          enough to help them get started on their journey into STEM.
-        </p>
-        <br />
-        <p class="font-medium text-2xl">Who can attend?</p>
-        <p>
-          All high school and middle school students aged 13+ are welcome to
-          attend!
-        </p>
-        <br />
-        <p class="font-medium text-2xl">How do I attend in person?</p>
-        <p>
-          Our in-person venue will be held on June 3rd from 9:00 AM - 3:00 PM at
-          John P. Stevens High School (855 Grove Ave, Edison, NJ, 08820) in the
-          cafeteria. You don't need to be there the whole time, but our opening
-          ceremony will be held live at that location around 9:30. You also
-          don't need to be an Edison student to attend. However, you
-          <b>must</b> register in order to attend. Pizza will be provided for
-          lunch free of charge. Furthermore, although the venue will be open for
-          six hours, HackJPS will continue virtually for the remainder of the
-          competition period. <br /><br />
-          Attending in person would be a great opportunity to make some new
-          friends and form a team with other participants like yourself.
-        </p>
-        <br />
-        <p class="font-medium text-2xl">How much does it cost?</p>
-        <p>
-          There is no fee to attend! HackJPS is a learning experience, and we
-          don't want to make you pay for it.
-        </p>
-        <br />
-        <p class="font-medium text-2xl">When is it?</p>
-        <p>
-          HackJPS will open on June 3rd following our opening ceremony sometime
-          around 9:00 AM. Projects should be submitted by 1:00 PM on June 4th.
-        </p>
-        <br />
-        <p class="font-medium text-2xl">
-          Do I need coding/hackathon experience to attend?
-        </p>
-        <p>
-          Nope! You can be a complete beginner. We'll have plenty of workshops
-          and mentors to help you get started, and you'll also be able to meet
-          other beginners like yourself.
-        </p>
-        <br />
-        <p class="font-medium text-2xl">
-          Do I need a team before I can sign up?
-        </p>
-        <p>
-          If you don't have a team before the event, don't worry! We encourage
-          you to meet new students during or at the beginning of the event
-          through Discord or in person if you come to the physical venue. The
-          maximum number of hackers on a team is 5. Once you do form a team,
-          make sure to add your team members to your submission on Devpost!
-        </p>
-        <br />
-        <p class="font-medium text-2xl">What can I win?</p>
-        <p>
-          Specific are to be determined, but in total the prizes are currently
-          worth over $55,000!
-        </p>
-      </div>
-    </section>
-
-    <section class="px-52 py-20" id="sponsors">
-      <h2 class="text-4xl text-center">
-        This event is made possible by our amazing sponsors!
-      </h2>
-      <div class="grid gap-8 grid-cols-2 grid-rows-5 mt-8 text-slate-400">
-        <div class="flex flex-col">
-          <a href="https://www.google.com/" target="_blank"
-            ><img
-              src="assets/sponsors/google.png"
-              alt="Google"
-              class="mx-auto"
-              style="width: 70%"
-          /></a>
-          <span class="text-center text-lg">Google</span>
-        </div>
-        <div class="flex flex-col">
-          <a href="https://www.wolframalpha.com/" target="_blank">
-            <img
-              src="assets/sponsors/wolfram.png"
-              class="mx-auto"
-              style="width: 70%"
-              alt="Wolfram Language"
-          /></a>
-          <span class="text-center text-lg">Wolfram Language</span>
-        </div>
-        <div class="flex flex-col">
-          <a href="https://www.taskade.com/" target="_blank">
-            <img
-              src="assets/sponsors/taskade.png"
-              alt="Taskade"
-              class="mx-auto"
-              style="width: 70%"
-          /></a>
-          <span class="text-center text-lg">Taskade</span>
-        </div>
-        <div class="flex flex-col">
-          <a href="https://balsamiq.com/" target="_blank">
-            <img
-              src="assets/sponsors/balsamiq.png"
-              alt="Balsamiq"
-              class="mx-auto"
-              style="width: 70%"
-          /></a>
-          <span class="text-center text-lg">Balsamiq</span>
-        </div>
-        <div class="flex flex-col">
-          <a href="https://gradescout.live/" target="_blank">
-            <img
-              src="assets/sponsors/gradescout.png"
-              alt="GradeScout.live"
-              class="mx-auto"
-              style="width: 80%"
-          /></a>
-          <span class="text-center text-lg">GradeScout.live</span>
-        </div>
-        <div class="flex flex-col">
-          <a href="https://jps.edison.k12.nj.us/" target="_blank">
-            <img
-              src="assets/sponsors/jps.png"
-              alt="John P. Stevens High School"
-              class="mx-auto"
-              style="width: 30%"
-          /></a>
-          <span class="text-center text-lg">John P. Stevens High School</span>
-        </div>
-        <div class="flex flex-col">
-          <a href="https://www.echo3d.com/" target="_blank">
-            <img
-              src="assets/sponsors/echo3d.png"
-              alt="echo3D"
-              class="mx-auto"
-              style="width: 80%"
-            />
-          </a>
-          <span class="text-center text-lg">echo3D</span>
-        </div>
-        <div class="flex flex-col">
-          <a href="https://www.axure.com/" target="_blank">
-            <img
-              src="assets/sponsors/axure.svg"
-              class="mx-auto"
-              style="width: 65%"
-              alt="Axure"
-          /></a>
-          <span class="text-center text-lg">Axure</span>
-        </div>
-        <div class="flex flex-col">
-          <a href="https://www.voiceflow.com/" target="_blank">
-            <img
-              src="assets/sponsors/voiceflow.svg"
-              class="mx-auto"
-              style="width: 65%"
-              alt="Voiceflow"
-          /></a>
-          <span class="text-center text-lg">Voiceflow</span>
-        </div>
-        <div class="flex flex-col">
-          <a href="https://artofproblemsolving.com/" target="_blank">
-            <img
-              src="assets/sponsors/aops.svg"
-              class="mx-auto"
-              style="width: 65%"
-              alt="AoPS"
-          /></a>
-          <span class="text-center text-lg">AoPS</span>
-        </div>
-      </div>
-      <div class="flex flex-col mt-4 text-slate-400">
-        <a href="https://hackclub.com/" target="_blank">
-          <img
-            src="assets/sponsors/hackclub.svg"
-            class="mx-auto"
-            style="width: 30%"
-            alt="The Hack Foundation"
-        /></a>
-        <span class="text-center text-lg"
-          >Fiscally Sponsored by the Hack Foundation</span
-        >
-      </div>
-      <p class="text-center mt-14 text-xl text-slate-500">
-        Interested in <span class="font-medium">donating</span>?
-        <a
-          class="text-green-500"
-          href="https://bank.hackclub.com/donations/start/hackjps2023"
-          target="_blank"
-          >Make a tax-deductible donation</a
-        >
-        to HackJPS! <br />
-        Interested in <span class="font-medium">becoming a sponsor</span>? Check
-        out our
-        <a
-          class="text-green-500"
-          href="/assets/hackjps/2023_Sponsorship_Packet.pdf"
-          target="_blank"
-          >sponsorship packet</a
-        >!
-      </p>
-    </section>
-
-    <section class="bg-green-600 py-20" id="contact">
-      <div class="flex justify-center">
-        <img class="w-24" src="assets/LOGO.png" alt="HackJPS 2023 Logo" />
-      </div>
-      <div class="flex justify-center mt-5 text-slate-200 text-3xl space-x-10">
+      <div class="text-white text-xl mt-10 flex justify-center flex-col lg:flex-row">
         <a href="https://hackjps-2023.devpost.com/" target="_blank"
-          ><i class="fa-solid fa-link"></i
-        ></a>
-        <a href="https://www.instagram.com/hackjps2023" target="_blank"
-          ><i class="fa-brands fa-instagram"></i
-        ></a>
-        <a href="mailto:hackjps-team@googlegroups.com"
-          ><i class="fa-regular fa-envelope"></i
-        ></a>
-        <a
-          href="https://github.com/sreyas-voruganti/HackJPS-2023-Website"
-          target="_blank"
-          ><i class="fa-brands fa-github"></i
-        ></a>
+          class="bg-slate-400 hover:bg-slate-500 px-6 py-3 rounded lg:mr-3 drop-shadow w-4/5 lg:w-auto mx-auto z-20">
+          <i class="fa-solid fa-code"></i> Devpost
+        </a>
         <a href="https://discord.gg/aUWPAmx9tk" target="_blank"
-          ><i class="fa-brands fa-discord"></i
-        ></a>
-        <a
-          href="https://bank.hackclub.com/donations/start/hackjps2023"
-          target="_blank"
-          ><i class="fa-solid fa-hand-holding-dollar"></i
-        ></a>
+          class="bg-slate-400 hover:bg-slate-500 px-6 py-3 rounded lg:mx-3 drop-shadow mt-4 lg:mt-0 w-4/5 lg:w-auto mx-auto z-20">
+          <i class="fa-brands fa-discord"></i> Discord
+        </a>
+        <a href="https://forms.gle/1ULsw2rBsMmMZr4Y7" target="_blank"
+          class="bg-slate-400 hover:bg-slate-500 px-6 py-3 rounded lg:ml-3 drop-shadow mt-4 lg:mt-0 w-4/5 lg:w-auto mx-auto z-20">
+          <i class="fa-solid fa-arrow-right"></i> Register
+        </a>
       </div>
-      <div class="text-center mt-8 text-slate-100">
-        <p>Copyright © HackJPS 2023</p>
-        <p>
-          Maintained by Sai Voruganti, Troy Gunawardene, Naishadh Patel, &
-          Ishaan Gupte
-        </p>
+    </div>
+  </section>
+
+  <section class="bg-yellow-200 lg:px-52 lg:py-20 w-full md:px-10 px-8" id="about">
+    <h2 class="text-center pt-32 text-4xl">About Us</h2>
+    <p class="mt-5 text-yellow-800 text-xl border-b-2 pb-10 border-yellow-800">
+      HackJPS will be a hybrid (in person & virtual) hackathon hosted by
+      students of John P. Stevens High School in Edison, NJ during the weekend
+      of <b>June 3rd, 2023</b>. This is an official event conducted with the
+      permission of JPS administration. HackJPS was first hosted virtually in
+      2020 with over <b>300 participants</b>, and was a great success. <br />
+      <br />
+
+      Participation will be open to
+      <b>middle and high school students</b> (aged 13+) from Edison as well as
+      from other locations or school districts. Participants may have
+      <b>any level of experience, or none at all</b>. We are welcoming to
+      beginners and experts alike! <br /><br />
+
+      Additionally, participants will be able to attend in-person or virtual
+      <b>workshops</b> hosted by sponsors or student organizations, exposing
+      them to a multitude of other topics that might interest them.
+    </p>
+    <h2 class="text-center pt-12 text-4xl">FAQ</h2>
+    <div class="mt-5 text-yellow-800 text-xl pb-10">
+      <p class="font-medium text-2xl">What is a hackathon?</p>
+      <p>
+        A <b>hackathon</b> is a competition (usually taking place on a
+        weekend) in which student programmers get together, form small teams,
+        and compete to create the best projects they can within the given
+        amount of time. Hackathons may offer prizes (often contributed by
+        sponsors) for the overall best project as well as the best projects in
+        multiple specific categories. <br /><br />
+
+        Hackathons are designed to bring young people together around a common
+        interest in technology and further develop that interest by allowing
+        them to enjoy themselves while gaining valuable experience. Attendees
+        often make new friends, gain new skills, and have a great time
+        together. Hackathons are especially valuable for those with less
+        experience because they are introduced to peers and mentors who are
+        enough to help them get started on their journey into STEM.
+      </p>
+      <br />
+      <p class="font-medium text-2xl">Who can attend?</p>
+      <p>
+        All high school and middle school students aged 13+ are welcome to
+        attend!
+      </p>
+      <br />
+      <p class="font-medium text-2xl">How do I attend in person?</p>
+      <p>
+        Our in-person venue will be held on June 3rd from 9:00 AM - 3:00 PM at
+        John P. Stevens High School (855 Grove Ave, Edison, NJ, 08820) in the
+        cafeteria. You don't need to be there the whole time, but our opening
+        ceremony will be held live at that location around 9:30. You also
+        don't need to be an Edison student to attend. However, you
+        <b>must</b> register in order to attend. Pizza will be provided for
+        lunch free of charge. Furthermore, although the venue will be open for
+        six hours, HackJPS will continue virtually for the remainder of the
+        competition period. <br /><br />
+        Attending in person would be a great opportunity to make some new
+        friends and form a team with other participants like yourself.
+      </p>
+      <br />
+      <p class="font-medium text-2xl">How much does it cost?</p>
+      <p>
+        There is no fee to attend! HackJPS is a learning experience, and we
+        don't want to make you pay for it.
+      </p>
+      <br />
+      <p class="font-medium text-2xl">When is it?</p>
+      <p>
+        HackJPS will open on June 3rd following our opening ceremony sometime
+        around 9:00 AM. Projects should be submitted by 1:00 PM on June 4th.
+      </p>
+      <br />
+      <p class="font-medium text-2xl">
+        Do I need coding/hackathon experience to attend?
+      </p>
+      <p>
+        Nope! You can be a complete beginner. We'll have plenty of workshops
+        and mentors to help you get started, and you'll also be able to meet
+        other beginners like yourself.
+      </p>
+      <br />
+      <p class="font-medium text-2xl">
+        Do I need a team before I can sign up?
+      </p>
+      <p>
+        If you don't have a team before the event, don't worry! We encourage
+        you to meet new students during or at the beginning of the event
+        through Discord or in person if you come to the physical venue. The
+        maximum number of hackers on a team is 5. Once you do form a team,
+        make sure to add your team members to your submission on Devpost!
+      </p>
+      <br />
+      <p class="font-medium text-2xl">What can I win?</p>
+      <p>
+        Specific are to be determined, but in total the prizes are currently
+        worth over $55,000!
+      </p>
+    </div>
+  </section>
+
+  <section class="md:px-52 md:py-20 px-6 py-6" id="sponsors">
+    <h2 class="text-4xl text-center">
+      This event is made possible by our amazing sponsors!
+    </h2>
+    <div
+      class="grid gap-12 md:gap-8 grid-cols-1 grid-rows-10 md:grid-cols-2 md:grid-rows-5 mt-12 md:mt-8 text-slate-400">
+      <div class="flex flex-col">
+        <a href="https://www.google.com/" target="_blank"><img src="assets/sponsors/google.png" alt="Google"
+            class="mx-auto" style="width: 70%" /></a>
+        <span class="text-center text-lg">Google</span>
       </div>
-    </section>
+      <div class="flex flex-col">
+        <a href="https://www.wolframalpha.com/" target="_blank">
+          <img src="assets/sponsors/wolfram.png" class="mx-auto" style="width: 70%" alt="Wolfram Language" /></a>
+        <span class="text-center text-lg">Wolfram Language</span>
+      </div>
+      <div class="flex flex-col">
+        <a href="https://www.taskade.com/" target="_blank">
+          <img src="assets/sponsors/taskade.png" alt="Taskade" class="mx-auto" style="width: 70%" /></a>
+        <span class="text-center text-lg">Taskade</span>
+      </div>
+      <div class="flex flex-col">
+        <a href="https://balsamiq.com/" target="_blank">
+          <img src="assets/sponsors/balsamiq.png" alt="Balsamiq" class="mx-auto" style="width: 70%" /></a>
+        <span class="text-center text-lg md:mt-0 mt-4">Balsamiq</span>
+      </div>
+      <div class="flex flex-col">
+        <a href="https://gradescout.live/" target="_blank">
+          <img src="assets/sponsors/gradescout.png" alt="GradeScout.live" class="mx-auto" style="width: 80%" /></a>
+        <span class="text-center text-lg">GradeScout.live</span>
+      </div>
+      <div class="flex flex-col">
+        <a href="https://jps.edison.k12.nj.us/" target="_blank">
+          <img src="assets/sponsors/jps.png" alt="John P. Stevens High School" class="mx-auto" style="width: 30%" /></a>
+        <span class="text-center text-lg">John P. Stevens High School</span>
+      </div>
+      <div class="flex flex-col">
+        <a href="https://www.echo3d.com/" target="_blank">
+          <img src="assets/sponsors/echo3d.png" alt="echo3D" class="mx-auto" style="width: 80%" />
+        </a>
+        <span class="text-center text-lg">echo3D</span>
+      </div>
+      <div class="flex flex-col">
+        <a href="https://www.axure.com/" target="_blank">
+          <img src="assets/sponsors/axure.svg" class="mx-auto" style="width: 65%" alt="Axure" /></a>
+        <span class="text-center text-lg">Axure</span>
+      </div>
+      <div class="flex flex-col">
+        <a href="https://www.voiceflow.com/" target="_blank">
+          <img src="assets/sponsors/voiceflow.svg" class="mx-auto" style="width: 65%" alt="Voiceflow" /></a>
+        <span class="text-center text-lg">Voiceflow</span>
+      </div>
+      <div class="flex flex-col">
+        <a href="https://artofproblemsolving.com/" target="_blank">
+          <img src="assets/sponsors/aops.svg" class="mx-auto" style="width: 65%" alt="AoPS" /></a>
+        <span class="text-center text-lg">AoPS</span>
+      </div>
+    </div>
+    <div class="flex flex-col mt-8 md:mt-4 text-slate-400">
+      <a href="https://hackclub.com/" target="_blank">
+        <img src="assets/sponsors/hackclub.svg" class="mx-auto" style="width: 30%" alt="The Hack Foundation" /></a>
+      <span class="text-center text-lg md:mt-0 mt-4">Fiscally Sponsored by the Hack Foundation</span>
+    </div>
+    <p class="text-center mt-14 text-xl text-slate-500">
+      Interested in <span class="font-medium">donating</span>?
+      <a class="text-green-500" href="https://bank.hackclub.com/donations/start/hackjps2023" target="_blank">Make a
+        tax-deductible donation</a>
+      to HackJPS! <br />
+      Interested in <span class="font-medium">becoming a sponsor</span>? Check
+      out our
+      <a class="text-green-500" href="/assets/hackjps/2023_Sponsorship_Packet.pdf" target="_blank">sponsorship
+        packet</a>!
+    </p>
+  </section>
 
-    <script src="particles/particles.js"></script>
-    <script src="particles/app.js"></script>
+  <section class="bg-green-600 py-20" id="contact">
+    <div class="flex justify-center">
+      <img class="w-24" src="assets/LOGO.png" alt="HackJPS 2023 Logo" />
+    </div>
+    <div
+      class="grid grid-rows-2 grid-cols-3 md:grid-rows-1 md:grid-cols-6 md:mt-5 mt-7 text-slate-200 text-3xl w-4/5 mx-auto md:w-3/5 gap-y-8 md:gap-0 xl:w-1/4">
+      <a href="https://hackjps-2023.devpost.com/" target="_blank" class="text-center"><i
+          class="fa-solid fa-link"></i></a>
+      <a href="https://www.instagram.com/hackjps2023" target="_blank" class="text-center"><i
+          class="fa-brands fa-instagram"></i></a>
+      <a href="mailto:hackjps-team@googlegroups.com" class="text-center"><i class="fa-regular fa-envelope"></i></a>
+      <a href="https://github.com/sreyas-voruganti/HackJPS-2023-Website" target="_blank" class="text-center"><i
+          class="fa-brands fa-github"></i></a>
+      <a href="https://discord.gg/aUWPAmx9tk" target="_blank" class="text-center"><i
+          class="fa-brands fa-discord"></i></a>
+      <a href="https://bank.hackclub.com/donations/start/hackjps2023" target="_blank" class="text-center"><i
+          class="fa-solid fa-hand-holding-dollar"></i></a>
+    </div>
+    <div class="text-center mt-8 text-slate-100 px-4 md:px-0">
+      <p>Copyright © HackJPS 2023</p>
+      <p>
+        Maintained by Sai Voruganti, Troy Gunawardene, Naishadh Patel, &
+        Ishaan Gupte
+      </p>
+    </div>
+  </section>
 
-    <script>
-      const navbar = document.getElementById("nav-fixed");
-      window.onscroll = () => {
-        if (window.scrollY > 90) {
-          navbar.classList.add("bg-white", "text-black");
-        } else {
-          navbar.classList.remove("bg-white", "text-black");
-        }
-      };
-    </script>
-  </body>
+  <script src="particles/particles.js"></script>
+  <script src="particles/app.js"></script>
+  <script src="/assets/scroll-lock.min.js"></script>
+
+  <script>
+    const navbar = document.getElementById("nav-fixed");
+    window.onscroll = () => {
+      if (window.scrollY > 90) {
+        navbar.classList.add("bg-white", "text-black");
+      } else {
+        navbar.classList.remove("bg-white", "text-black");
+      }
+    };
+
+    let mobileNavOpen = false;
+
+    const mobileHamburger = document.querySelector('#mobile-navbar-hamburger');
+    const mobileNavbar = document.querySelector('#mobile-navbar-default');
+    const mobileNavbarBackdrop = document.querySelector('#mobile-navbar-backdrop');
+
+    mobileHamburger.addEventListener('click', () => {
+      if (mobileNavOpen) {
+        // Closing the navbar
+        mobileNavbar.removeAttribute("open");
+        mobileNavbarBackdrop.removeAttribute("open");
+        mobileNavbar.setAttribute("closing", "");
+        mobileNavbarBackdrop.setAttribute("closing", "");
+
+        mobileHamburger.style.color = 'white';
+
+        scrollLock.enablePageScroll();
+      } else {
+        // Opening the navbar
+
+        mobileNavbar.setAttribute("open", "");
+        mobileNavbarBackdrop.setAttribute("open", "");
+        mobileNavbar.style.display = 'block';
+        mobileNavbarBackdrop.style.display = 'block';
+        mobileHamburger.style.color = 'black';
+        scrollLock.disablePageScroll();
+      }
+
+      mobileNavOpen = !mobileNavOpen;
+    });
+
+    mobileNavbarBackdrop.addEventListener('click', () => {
+      // Closing the navbar
+      mobileNavbar.removeAttribute("open");
+      mobileNavbarBackdrop.removeAttribute("open");
+      mobileNavbar.setAttribute("closing", "");
+      mobileNavbarBackdrop.setAttribute("closing", "");
+
+      mobileHamburger.style.color = 'white';
+
+      mobileNavOpen = false;
+      scrollLock.enablePageScroll();
+    });
+
+    // The navbar needs to be closed whenever the links are clicked
+    const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+    mobileNavLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        // Closing the navbar
+        mobileNavbar.removeAttribute("open");
+        mobileNavbarBackdrop.removeAttribute("open");
+        mobileNavbar.setAttribute("closing", "");
+        mobileNavbarBackdrop.setAttribute("closing", "");
+
+        mobileHamburger.style.color = 'white';
+
+        mobileNavOpen = false;
+        scrollLock.enablePageScroll();
+      });
+    });
+
+    mobileNavbar.addEventListener('animationend', (e) => {
+      if (e.animationName === 'navbarSlideOut') {
+        mobileNavbar.removeAttribute("closing");
+        mobileNavbar.style.display = 'none';
+      }
+    });
+
+    mobileNavbarBackdrop.addEventListener('animationend', (e) => {
+      if (e.animationName === 'backdropFadeOut') {
+        mobileNavbarBackdrop.removeAttribute("closing");
+        mobileNavbarBackdrop.style.display = 'none';
+      }
+    })
+
+
+  </script>
+</body>
+
 </html>
