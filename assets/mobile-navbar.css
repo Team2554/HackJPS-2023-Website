@@ -1,0 +1,51 @@
+#mobile-navbar-default[open] {
+    animation: navbarSlideIn 0.2s forwards;
+}
+
+@keyframes navbarSlideIn {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+#mobile-navbar-backdrop[open] {
+    animation: backdropFadeIn 0.2s forwards;
+}
+
+#mobile-navbar-default[closing] {
+    animation: navbarSlideOut 0.2s forwards;
+}
+
+#mobile-navbar-backdrop[closing] {
+    animation: backdropFadeOut 0.2s forwards;
+}
+
+@keyframes backdropFadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.6;
+    }
+}
+
+@keyframes navbarSlideOut {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes backdropFadeOut {
+    0% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 0;
+    }
+}

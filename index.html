@@ -24,6 +24,7 @@
     rel="stylesheet" />
 
   <link rel="stylesheet" href="/particles/particles.css">
+  <link rel="stylesheet" href="/assets/mobile-navbar.css">
 </head>
 
 <body style="font-family: 'Georama', sans-serif" id="page-top">
@@ -41,7 +42,7 @@
   </nav>
 
   <nav id="mobile-navbar" class="lg:hidden">
-    <button class="absolute text-white w-8 text-2xl translate-x-4 translate-y-4 z-[70]" type="button"
+    <button class="absolute text-white w-8 text-2xl translate-x-7 translate-y-6 z-[70]" type="button"
       data-collapse-toggle="mobile-navbar-default" id="mobile-navbar-hamburger">
       <i class="fa-solid fa-bars"></i>
     </button>
@@ -281,7 +282,7 @@
       <img class="w-24" src="assets/LOGO.png" alt="HackJPS 2023 Logo" />
     </div>
     <div
-      class="grid grid-rows-2 grid-cols-3 md:grid-rows-1 md:grid-cols-6 md:mt-5 mt-7 text-slate-200 text-3xl w-4/5 mx-auto md:w-3/5 gap-y-8 md:gap-0 xl:w-1/2">
+      class="grid grid-rows-2 grid-cols-3 md:grid-rows-1 md:grid-cols-6 md:mt-5 mt-7 text-slate-200 text-3xl w-4/5 mx-auto md:w-3/5 gap-y-8 md:gap-0 xl:w-1/4">
       <a href="https://hackjps-2023.devpost.com/" target="_blank" class="text-center"><i
           class="fa-solid fa-link"></i></a>
       <a href="https://www.instagram.com/hackjps2023" target="_blank" class="text-center"><i
@@ -323,24 +324,40 @@
     const mobileNavbar = document.querySelector('#mobile-navbar-default');
     const mobileNavbarBackdrop = document.querySelector('#mobile-navbar-backdrop');
 
-    mobileHamburger.addEventListener('click', (e) => {
-      mobileNavbar.style.display = mobileNavOpen ? 'none' : 'block';
-      mobileHamburger.style.color = mobileNavOpen ? 'white' : 'black';
-      mobileNavbarBackdrop.style.display = mobileNavOpen ? 'none' : 'block';
-
+    mobileHamburger.addEventListener('click', () => {
       if (mobileNavOpen) {
+        // Closing the navbar
+        mobileNavbar.removeAttribute("open");
+        mobileNavbarBackdrop.removeAttribute("open");
+        mobileNavbar.setAttribute("closing", "");
+        mobileNavbarBackdrop.setAttribute("closing", "");
+
+        mobileHamburger.style.color = 'white';
+
         scrollLock.enablePageScroll();
       } else {
+        // Opening the navbar
+
+        mobileNavbar.setAttribute("open", "");
+        mobileNavbarBackdrop.setAttribute("open", "");
+        mobileNavbar.style.display = 'block';
+        mobileNavbarBackdrop.style.display = 'block';
+        mobileHamburger.style.color = 'black';
         scrollLock.disablePageScroll();
       }
 
       mobileNavOpen = !mobileNavOpen;
     });
 
-    mobileNavbarBackdrop.addEventListener('click', (e) => {
-      mobileNavbar.style.display = 'none';
+    mobileNavbarBackdrop.addEventListener('click', () => {
+      // Closing the navbar
+      mobileNavbar.removeAttribute("open");
+      mobileNavbarBackdrop.removeAttribute("open");
+      mobileNavbar.setAttribute("closing", "");
+      mobileNavbarBackdrop.setAttribute("closing", "");
+
       mobileHamburger.style.color = 'white';
-      mobileNavbarBackdrop.style.display = 'none';
+
       mobileNavOpen = false;
       scrollLock.enablePageScroll();
     });
@@ -348,14 +365,34 @@
     // The navbar needs to be closed whenever the links are clicked
     const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
     mobileNavLinks.forEach(link => {
-      link.addEventListener('click', e => {
-        mobileNavbar.style.display = 'none';
+      link.addEventListener('click', () => {
+        // Closing the navbar
+        mobileNavbar.removeAttribute("open");
+        mobileNavbarBackdrop.removeAttribute("open");
+        mobileNavbar.setAttribute("closing", "");
+        mobileNavbarBackdrop.setAttribute("closing", "");
+
         mobileHamburger.style.color = 'white';
-        mobileNavbarBackdrop.style.display = 'none';
+
         mobileNavOpen = false;
         scrollLock.enablePageScroll();
       });
+    });
+
+    mobileNavbar.addEventListener('animationend', (e) => {
+      if (e.animationName === 'navbarSlideOut') {
+        mobileNavbar.removeAttribute("closing");
+        mobileNavbar.style.display = 'none';
+      }
+    });
+
+    mobileNavbarBackdrop.addEventListener('animationend', (e) => {
+      if (e.animationName === 'backdropFadeOut') {
+        mobileNavbarBackdrop.removeAttribute("closing");
+        mobileNavbarBackdrop.style.display = 'none';
+      }
     })
+
 
   </script>
 </body>
