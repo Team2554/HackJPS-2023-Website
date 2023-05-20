@@ -1,4 +1,6 @@
 # HackJPS 2023 Website
+For more info or registration see [our website](https://hackjps.org) and our [Devpost](https://hackjps-2023.devpost.com/).
+
 
 Credit:\
 Vincent Garreau's particles.js\
