@@ -1,4 +1,4 @@
-# HackJPS 2023 Website
+# HackJPS 2024 Website
 For more info or registration see [our website](https://hackjps.org) and our [Devpost](https://hackjps-2023.devpost.com/).
 
 
