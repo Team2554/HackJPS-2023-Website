@@ -35,17 +35,8 @@
     <link rel="stylesheet" href="/assets/mobile-navbar.css" />
   </head>
 
-  <body
-    style="font-family: 'Georama', sans-serif"
-    id="page-top"
-    class="bg-green-600"
-  >
-    <div
-      class="fixed w-full top-0 height-20 border-slate-200 select-none justify-between items-center text-center opacity-80 z-[500] text-slate-950 bg-yellow-300"
-    >
-      HackJPS 2024 will be on June 8th! Our website is not yet fully updated.
-      Check back soon!
-    </div>
+  <body style="font-family: 'Georama', sans-serif" id="page-top" class = "bg-green-600">
+    <div class="fixed w-full top-0 height-20 border-slate-200 select-none justify-between items-center text-center z-50 text-slate-950 bg-yellow-300">HackJPS 2024 will be on June 8th! Our website is not yet fully updated. Check back soon!</div>
     <nav
       id="nav-fixed"
       class="top-6 hidden lg:flex lg:p-5 fixed w-full border-slate-200 select-none justify-between items-center z-50 text-slate-100"
@@ -64,13 +55,12 @@
         <p><a href="#about">About</a></p>
         <p><a href="#sponsors">Sponsors</a></p>
         <p><a href="#contact">Contact</a></p>
-        <p><a href="#archive">Archive</a></p>
       </div>
     </nav>
 
     <nav id="mobile-navbar" class="lg:hidden">
       <button
-        class="absolute text-white w-8 text-2xl translate-x-7 translate-y-6 z-[70] m-2"
+        class="absolute text-white w-8 text-2xl translate-x-7 translate-y-6 z-[70]"
         type="button"
         data-collapse-toggle="mobile-navbar-default"
         id="mobile-navbar-hamburger"
@@ -94,11 +84,6 @@
           href="#contact"
           class="block mobile-nav-link text-xl md:text-2xl mt-4"
           ><span>Contact</span></a
-        >
-        <a
-          href="#archive"
-          class="block mobile-nav-link text-xl md:text-2xl mt-4"
-          ><span>Archive</span></a
         >
       </div>
 
@@ -143,19 +128,33 @@
         </div>
 
         <p class="mt-5 lg:mt-1 xl:mt-5 text-2xl text-slate-100 px-4 lg:px-0">
-          Hosted in person and virtually at John P. Stevens High School on June
-          8th <br />
+          Hosted in person and virtually at John P. Stevens High School on June 8th <br />
           <br />
+          Thank you to all 250+ participants!
         </p>
         <div
           class="text-white text-xl mt-10 flex justify-center flex-col lg:flex-row pt-8"
-        >
+        > 
           <a
             href="https://hackjps-2023.devpost.com/project-gallery"
             target="_blank"
-            class="bg-slate-400 hover:bg-slate-500 px-16 py-7 rounded lg:mr-3 drop-shadow w-4/5 lg:w-auto z-20"
+            class="bg-slate-400 hover:bg-slate-500 px-6 py-3 rounded lg:mr-3 drop-shadow w-4/5 lg:w-auto mx-auto z-20"
           >
-            <i class="fa-solid fa-code"></i> Devpost
+            <i class="fa-solid fa-code"></i> 2023 Project Gallery
+          </a>
+          <a
+            href="https://docs.google.com/presentation/d/1YrsReJM2Nbu16Xje0OveZ09aDvygKoPBj0scn_ah7js/edit?usp=sharing"
+            target="_blank"
+            class="bg-slate-400 hover:bg-slate-500 px-6 py-3 rounded lg:mx-3 drop-shadow mt-4 lg:mt-0 w-4/5 lg:w-auto mx-auto z-20"
+          >
+            <i class="fa-solid fa-award"></i> 2023 Closing Ceremony Slides
+          </a>
+          <a
+            href="https://blog.gradescout.live/hackjps-2023/"
+            target="_blank"
+            class="bg-slate-400 hover:bg-slate-500 px-6 py-3 rounded lg:ml-3 drop-shadow mt-4 lg:mt-0 w-4/5 lg:w-auto mx-auto z-20"
+          >
+            <i class="fa-solid fa-graduation-cap"></i> A Message From GradeScout
           </a>
         </div>
       </div>
@@ -170,10 +169,10 @@
         class="mt-5 text-yellow-800 text-xl border-b-2 pb-10 border-yellow-800"
       >
         HackJPS will be a hybrid (in person & virtual) hackathon hosted by
-        students of John P. Stevens High School in Edison, NJ during the week of
-        <b>June 8th</b>. This is an official event conducted with the permission
-        of JPS administration. HackJPS was first hosted virtually in 2020 with
-        over <b>300 participants</b>, and was a great success. <br />
+        students of John P. Stevens High School in Edison, NJ during the week
+        of <b>June 8th</b>. This is an official event conducted with the
+        permission of JPS administration. HackJPS was first hosted virtually in
+        2020 with over <b>300 participants</b>, and was a great success. <br />
         <br />
 
         Participation will be open to
@@ -266,8 +265,7 @@
         </p>
       </div>
     </section>
-    <section class="py-2 bg-green-600"></section>
-
+    
     <section class="px-6 py-6 bg-white" id="sponsors">
       <!-- <h2 class="text-4xl text-center">
         This event is made possible by our amazing sponsors!
@@ -400,58 +398,7 @@
         >!
       </p>
     </section>
-    <section class="py-2 bg-green-600"></section>
-    <section class="px-6 py-6 bg-white" id="archive">
-      <p class="text-center text-3xl font-semibold text-slate-500">
-        Check out some projects made by students in previous years!
-      </p>
-      <div
-        class="text-white text-[110%] font-medium mt-1 flex justify-center flex-col lg:flex-row pt-8"
-      >
-        <p
-          class="text-center text-3xl font-black my-auto lg:pb-0 pb-5 mx-10 text-slate-500"
-        >
-          2023:
-        </p>
-        <a
-          href="https://hackjps-2023.devpost.com/project-gallery"
-          target="_blank"
-          class="bg-slate-400 hover:bg-slate-500 px-6 py-3 rounded lg:mr-3 drop-shadow w-4/5 lg:w-auto mx-auto z-20"
-        >
-          <i class="fa-solid fa-code"></i> 2023 Project Gallery
-        </a>
-        <a
-          href="https://docs.google.com/presentation/d/1YrsReJM2Nbu16Xje0OveZ09aDvygKoPBj0scn_ah7js/edit?usp=sharing"
-          target="_blank"
-          class="bg-slate-400 hover:bg-slate-500 px-6 py-3 rounded lg:mx-3 drop-shadow mt-4 lg:mt-0 w-4/5 lg:w-auto mx-auto z-20"
-        >
-          <i class="fa-solid fa-award"></i> 2023 Closing Ceremony Slides
-        </a>
-        <a
-          href="https://blog.gradescout.live/hackjps-2023/"
-          target="_blank"
-          class="bg-slate-400 hover:bg-slate-500 px-6 py-3 rounded lg:ml-3 drop-shadow mt-4 lg:mt-0 w-4/5 lg:w-auto mx-auto z-20"
-        >
-          <i class="fa-solid fa-graduation-cap"></i> A Message From GradeScout
-        </a>
-      </div>
-      <div
-        class="text-white text-lg font-medium mt-1 flex justify-center flex-col lg:flex-row pt-8"
-      >
-        <p
-          class="text-center text-3xl font-black my-auto lg:pb-0 pb-5 mx-10 text-slate-500"
-        >
-          2020:
-        </p>
-        <a
-          href="https://hackjps.devpost.com/project-gallery"
-          target="_blank"
-          class="bg-slate-400 hover:bg-slate-500 px-6 py-3 rounded lg:mr-3 drop-shadow w-4/5 lg:w-auto lg:mx-0 mx-auto z-20"
-        >
-          <i class="fa-solid fa-code"></i> 2020 Project Gallery
-        </a>
-      </div>
-    </section>
+
     <section class="bg-green-600 py-20" id="contact">
       <div class="flex justify-center">
         <img class="w-24" src="assets/LOGO.png" alt="4 Logo" />
@@ -460,7 +407,7 @@
         class="grid grid-rows-2 grid-cols-3 md:grid-rows-1 md:grid-cols-5 md:mt-5 mt-7 text-slate-200 text-3xl w-4/5 mx-auto md:w-3/5 gap-y-8 md:gap-0 xl:w-1/4"
       >
         <a
-          href="https://hackjps-2024.devpost.com/"
+          href="https://hackjps-2023.devpost.com/"
           target="_blank"
           class="text-center"
           ><i class="fa-solid fa-link"></i
@@ -496,13 +443,7 @@
       <div class="text-center mt-8 text-slate-100 px-4 md:px-0">
         <p>Copyright © HackJPS 2024</p>
         <p>
-          Maintained by
-          <a
-            class="text-blue-200 underline hover:no-underline"
-            href="https://jpsrobotics2554.org"
-            target="_blank"
-            >JPS Robotics</a
-          >
+          Maintained by <a class="text-blue-200 underline hover:no-underline" href="https://jpsrobotics2554.org" target="_blank">JPS Robotics</a>
         </p>
       </div>
     </section>
