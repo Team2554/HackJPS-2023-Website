@@ -133,13 +133,19 @@
         </div>
 
         <p class="mt-5 lg:mt-1 xl:mt-5 text-2xl text-slate-100 px-4 lg:px-0">
-          A beginner-friendly hackathon being held in person and virtually at
-          John P. Stevens High School on June 8th.<br />
+          A beginner-friendly hackathon held in person and virtually at John P.
+          Stevens High School.<br />
+          <i class="text-lg">
+            <!-- Comment out this <i> element when registration is open -->
+            <!-- Make sure the year is updated -->
+            HackJPS 2024 has ended. Join our Discord server for updates or see
+            the archive section for past resources.</i
+          >
         </p>
         <div
           class="text-white text-xl mt-10 flex justify-center flex-col lg:flex-row"
         >
-          <a
+          <!-- <a
             href="https://hackjps-2024.devpost.com"
             target="_blank"
             class="bg-slate-400 hover:bg-slate-500 px-6 py-3 rounded lg:mr-3 drop-shadow w-4/5 lg:w-auto mx-auto z-20"
@@ -152,13 +158,22 @@
             class="bg-green-500 border-solid border-2 border-transparent hover:bg-green-600 hover:border-amber-400 px-6 py-3 rounded lg:mx-3 drop-shadow mt-4 lg:mt-0 w-4/5 lg:w-auto mx-auto z-20"
           >
             <i class="fa-solid fa-user-plus"></i> Register
-          </a>
+          </a> -->
           <a
             href="https://discord.gg/aUWPAmx9tk"
             target="_blank"
+            class="bg-slate-400 hover:bg-slate-500 px-6 py-3 rounded lg:mr-3 drop-shadow mt-4 lg:mt-0 w-4/5 lg:w-auto mx-auto z-20"
+          >
+            <!-- Replace lg:mr-3 with lg:ml-3 in the class list for the parent <a> element when you uncomment the Devpost and registration buttons -->
+            <!-- Vice versa when you comment it out again -->
+            <i class="fa-brands fa-discord"></i> Discord
+          </a>
+          <a
+            href="#archive"
             class="bg-slate-400 hover:bg-slate-500 px-6 py-3 rounded lg:ml-3 drop-shadow mt-4 lg:mt-0 w-4/5 lg:w-auto mx-auto z-20"
           >
-            <i class="fa-brands fa-discord"></i> Discord
+            <!-- Comment out this button when registration opens up -->
+            <i class="fa-solid fa-clock-rotate-left"></i> Archive
           </a>
         </div>
       </div>
