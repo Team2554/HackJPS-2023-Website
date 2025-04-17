@@ -18,7 +18,7 @@
         HACKJPS 2025 will be hosted on a saturday in June 2025, stay tuned for updates! Join our Discord or see the archive section for past resources
     </div>
 
-    <!-- Buttons -->
+    <!-- buttons -->
     <div class="flex justify-center mt-10 gap-5">
         <GradientButton outline color="cyanToBlue" class="gap-3">
             <div class="gap-3 p-2 flex ">

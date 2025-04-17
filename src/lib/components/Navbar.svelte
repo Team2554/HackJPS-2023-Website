@@ -15,12 +15,12 @@
       <Navbar {...navbarProps} class="container mx-auto">
         <NavBrand href="/">
           <img src="src/lib/images/hackJPS-logo.png" class="me-3 h-[96px] max-w-auto" alt="HackJPS Logo" />
-          <span class="self-center whitespace-nowrap text-2xl font-semibold dark:text-green-500 text-green-600">HackJPS 2025</span>
+          <span class="self-center whitespace-nowrap text-2xl font-semibold dark:text-green-500 text-green-600 font-mono">HackJPS 2025</span>
         </NavBrand>
         
         <NavHamburger />
         
-        <NavUl>
+        <NavUl class="font-mono">
           <NavLi href="/about" class="text-xl">About</NavLi>
           <NavLi href="/archive" class="text-xl">Archive</NavLi>
         </NavUl>

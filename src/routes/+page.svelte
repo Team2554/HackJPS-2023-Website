@@ -1,6 +1,7 @@
 <script>
     import LandingPage from "$lib/components/LandingPage.svelte";
     import AboutUs from "$lib/components/AboutUs.svelte";
+    import Faq from "$lib/components/FAQ.svelte";
 </script>
 
 <main>
@@ -17,7 +18,7 @@
         </div>
     </div>
 
-    <div class="bg-neutral-800 pt-10">
-        
+    <div>
+        <Faq/>
     </div>
 </main>
