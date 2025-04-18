@@ -1,5 +1,6 @@
 <script>
     import { Navbar, NavBrand, NavLi, NavUl, NavHamburger } from 'flowbite-svelte';
+    import { animateScroll } from 'svelte-scrollto-element';
     
     // Keep these props for transparency
     let navbarProps = {
@@ -8,10 +9,20 @@
       border: false,
       color: "none"
     };
+  import { onMount } from 'svelte';
+  let scrolledPastHero = false;
+  
+  onMount(() => {
+    const handleScroll = () => {
+      scrolledPastHero = window.scrollY > 100; 
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  });
   </script>
   
   <main>
-    <div class="absolute top-0 left-0 w-full z-50">
+    <div class={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 ${scrolledPastHero ? 'bg-neutral-900 shadow-md' : ''}`}>
       <Navbar {...navbarProps} class="container mx-auto">
         <NavBrand href="/">
           <img src="src/lib/images/hackJPS-logo.png" class="me-3 h-[96px] max-w-auto" alt="HackJPS Logo" />
@@ -20,8 +31,8 @@
         
         <NavHamburger />
         
-        <NavUl class="font-mono">
-          <NavLi href="/about" class="text-xl">About</NavLi>
+        <NavUl class="font-mono ">
+          <NavLi href="/#aboutUs" on:click={() => {animateScroll.scrollTo({element: "#aboutUs", offset: -116})}} class="text-xl text-green-200">About</NavLi>
           <NavLi href="/archive" class="text-xl">Archive</NavLi>
         </NavUl>
       </Navbar>
