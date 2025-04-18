@@ -12,19 +12,29 @@
             },
             {
                 question: "Who can attend?",
-                answer: ""
+                answer: "All high school and middle school students aged 13+ are welcome to attend!"
             },
             {
                 question: "How do I attend in person?",
-                answer: ""
+                answer: `Our in-person venue will be held on a Saturday (date TBD) at John P. Stevens High School (855 Grove Ave, Edison, NJ, 08820) in the cafeteria. You don't need to be there the whole time, but our opening ceremony will be held live at that location around 9:30. You also don't need to be an Edison student to attend. However, you must register in order to attend. Pizza will be provided for lunch free of charge. Furthermore, although the venue will be open for six hours, HackJPS will continue virtually for the remainder of the competition period.
+                        
+                        Attending in person would be a great opportunity to make some new friends and form a team with other participants like yourself.`
             },
             {
                 question: "How much does it cost?",
-                answer: ""
+                answer: "There is no fee to attend! HackJPS is a learning experience, and we don't want to make you pay for it."
             },
             {
                 question: "When is it?",
-                answer: ""
+                answer: "The date right now is TBD, stay tuned!"
+            },
+            {
+                question: "Do I need coding/hackathon experience to attend?",
+                answer: "Nope! You can be a complete beginner. We'll have plenty of workshops and mentors to help you get started, and you'll also be able to meet other beginners like yourself."
+            },
+            {
+                question: "Do I need a team before I can sign up?",
+                answer: "If you don't have a team before the event, don't worry! We encourage you to meet new students during or at the beginning of the event through Discord or in person if you come to the physical venue. The maximum number of hackers on a team is 4. Once you do form a team, make sure to add your team members to your submission on Devpost!"
             }
         ]
     }
