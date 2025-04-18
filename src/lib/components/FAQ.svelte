@@ -40,7 +40,7 @@
     }
 </script>
 
-<main class="bg-neutral-800 pt-10 px-36 pb-50 font-mono">
+<main class="bg-neutral-800 pt-10 px-36 pb-10 font-mono">
     <!-- Title -->
     <div class="text-4xl font-mono font-extrabold text-center text-green-200">FAQ</div>
 

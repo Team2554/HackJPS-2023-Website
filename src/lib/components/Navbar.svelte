@@ -33,14 +33,13 @@
         
         <NavUl class="font-mono ">
           <NavLi href="/#aboutUs" on:click={() => {animateScroll.scrollTo({element: "#aboutUs", offset: -116})}} class="text-xl text-green-200">About</NavLi>
-          <NavLi href="/archive" class="text-xl">Archive</NavLi>
+          <NavLi href="/#archive" class="text-xl" on:click={() => {animateScroll.scrollTo({element: "#archive", offset: -116})}}>Archive</NavLi>
         </NavUl>
       </Navbar>
     </div>
   </main>
   
   <style>
-    /* Keep these styles to ensure transparency */
     :global(nav), 
     :global(.navbar), 
     :global(.navbar div), 

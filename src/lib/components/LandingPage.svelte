@@ -40,7 +40,7 @@
             </GradientButton>
         </a>
         <a href={'#archive'}>
-            <GradientButton outline color="pinkToOrange" class="gap-3" on:click={() => {dispatch('about', '#aboutUs')}}> 
+            <GradientButton outline color="pinkToOrange" class="gap-3" on:click={() => {dispatch('about', '#archive')}}> 
                 <div class="gap-3 p-2 flex ">
                     <img src="src/lib/images/archive-icon.png" alt="Archive" class="h-[24px]">
                     <div class="text-white text-lg">Archive</div>
