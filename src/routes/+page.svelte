@@ -13,7 +13,7 @@
 
 <main>
     <div class="flex justify-center items-center text-center h-screen w-screen flex-col"> 
-        <LandingPage on:about={(e) => {scrollToSection(e.detail); console.log("here")}}/>
+        <LandingPage on:about={(e) => {scrollToSection(e.detail); console.log("here")}} class="z-10"/>
     </div>
 
     <div class="" id="aboutUs">
