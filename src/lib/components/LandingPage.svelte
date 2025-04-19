@@ -127,7 +127,7 @@
       COMING SOON
   </div>
   <div>
-      <img src="/images/hackJPS-logo.png" alt="HACKJPS-LOGO" class="max-h-[500px]">
+      <img src="./images/hackJPS-logo.png" alt="HACKJPS-LOGO" class="max-h-[500px]">
   </div>
 
   <div class="text-lg font-mono font-bold text-neutral-400">
@@ -141,7 +141,7 @@
       <a href="https://discord.gg/KCU5qG7R9m">
           <GradientButton outline color="cyanToBlue" class="gap-3">
               <div class="gap-3 p-2 flex ">
-                  <img src="/images/discord-logo.png" alt="Discord" class="h-[24px]">
+                  <img src="./images/discord-logo.png" alt="Discord" class="h-[24px]">
                   <div class="text-white text-lg">Discord</div>
               </div>
           </GradientButton>
@@ -149,7 +149,7 @@
       <a href="https://hackjps25.devpost.com">       
           <GradientButton outline color="purpleToPink" class="gap-3">
               <div class="gap-3 p-2 flex ">
-                  <img src="/images/devpost-logo.png" alt="Archive" class="h-[24px]">
+                  <img src="./images/devpost-logo.png" alt="Archive" class="h-[24px]">
                   <div class="text-white text-lg">Devpost</div>
               </div>
           </GradientButton>
@@ -157,7 +157,7 @@
       <a href={'#archive'}>
           <GradientButton outline color="pinkToOrange" class="gap-3" on:click={() => {dispatch('about', '#archive')}}> 
               <div class="gap-3 p-2 flex ">
-                  <img src="/images/archive-icon.png" alt="Archive" class="h-[24px]">
+                  <img src="./images/archive-icon.png" alt="Archive" class="h-[24px]">
                   <div class="text-white text-lg">Archive</div>
               </div>
           </GradientButton>

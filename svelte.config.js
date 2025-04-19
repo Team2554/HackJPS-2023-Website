@@ -8,6 +8,9 @@ const config = {
 			// Use a fallback for any routes that can't be prerendered
 			fallback: 'index.html'
 		}),
+		paths: {
+			base: process.env.NODE_ENV === 'production' ? '/HackJPS-2023-Website' : ''
+		},
 		prerender: {
 			handleHttpError: ({ path, referrer, message }) => {
 				// Ignore missing image files in src directory
