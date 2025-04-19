@@ -134,7 +134,7 @@
       A beginner-friendly hackathon held in person and virtually at John P. Stevens High School
   </div>
   <div class="text-sm text-neutral-500 font-semibold font-mono mt-3">
-      HACKJPS 2025 will be hosted on a saturday in June 2025, stay tuned for updates! Join our Discord or see the archive section for past resources
+      HACKJPS 2025 will be hosted on Saturday, June 15th, stay tuned for updates! Join our Discord or see the archive section for past resources
   </div>
 
   <div class="flex justify-center mt-10 gap-5">
