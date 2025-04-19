@@ -25,7 +25,7 @@
     <div class={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 ${scrolledPastHero ? 'bg-neutral-900 shadow-md' : ''}`}>
       <Navbar {...navbarProps} class="container mx-auto">
         <NavBrand href="/">
-          <img src="src/lib/images/hackJPS-logo.png" class="me-3 h-[96px] max-w-auto" alt="HackJPS Logo" />
+          <img src="/images/hackJPS-logo.png" class="me-3 h-[96px] max-w-auto" alt="HackJPS Logo" />
           <span class="self-center whitespace-nowrap text-2xl font-semibold dark:text-green-500 text-green-600 font-mono">HackJPS 2025</span>
         </NavBrand>
         

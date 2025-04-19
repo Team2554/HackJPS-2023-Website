@@ -6,18 +6,18 @@
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <!-- Logo Section -->
         <div class="flex justify-center mb-2">
-            <img src="src/lib/images/hackJPS-logo.png" alt="HackJPS Logo" class="h-30 object-contain">
+            <img src="/images/hackJPS-logo.png" alt="HackJPS Logo" class="h-30 object-contain">
         </div>
 
         <!-- Simple Links -->
         <div class="flex flex-col sm:flex-row justify-center items-center gap-6 mb-8 text-center">
             <a href="https://hackjps25.devpost.com" class="text-neutral-400 hover:text-green-200 transition-colors flex items-center gap-2">
-                <img src="src/lib/images/devpost-logo.png" alt="Devpost" class="h-5">
+                <img src="/images/devpost-logo.png" alt="Devpost" class="h-5">
                 <span>Devpost</span>
             </a>
 
             <a href="https://discord.gg/KCU5qG7R9m" class="text-neutral-400 hover:text-green-200 transition-colors flex items-center gap-2">
-                <img src="src/lib/images/discord-logo.png" alt="Devpost" class="h-4">
+                <img src="/images/discord-logo.png" alt="Devpost" class="h-4">
                 <span>Discord</span>
             </a>
             
