@@ -10,7 +10,7 @@
         </div>
 
         <!-- Simple Links -->
-        <div class="flex flex-col sm:flex-row justify-center items-center gap-6 mb-8 text-center">
+        <div class="flex sm:flex-row justify-center items-center gap-6 mb-8 text-center">
             <a href="https://hackjps25.devpost.com" class="text-neutral-400 hover:text-green-200 transition-colors flex items-center gap-2">
                 <img src="./images/devpost-logo.png" alt="Devpost" class="h-5">
                 <span>Devpost</span>

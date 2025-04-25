@@ -3,7 +3,7 @@
     import { archiveData } from '../data/archive';
 </script>
 
-<main class="bg-neutral-700 pt-10 px-36 pb-10">
+<main class="bg-neutral-700 pt-10 px-5 md:px-36 pb-10">
     <section class=" bg-neutral-700" id="archive">
         <p class="text-center text-3xl font-semibold font-mono text-green-300 mb-6">
           Check out past HackJPS events!

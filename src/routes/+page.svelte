@@ -20,8 +20,9 @@
         <AboutUs/>
     </div>
 
+    <!-- divider bar (ui lib doesnt have one ig)-->
     <div class="bg-neutral-800 pt-10">
-        <div class="h-[2px] bg-neutral-500 mx-36 rounded-sm">
+        <div class="h-[2px] bg-neutral-500 mx-5 md:mx-36 rounded-sm">
         </div>
     </div>
 
