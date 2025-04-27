@@ -4,10 +4,14 @@ import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 const config = {
 	preprocess: vitePreprocess(),
 	kit: {
-		adapter: adapter({
-			// Use a fallback for any routes that can't be prerendered
-			fallback: 'index.html'
-		}),
+			adapter: adapter({
+				fallback: '404.html'
+			}),
+			paths: {
+				base: process.argv.includes('dev') ? '' : process.env.BASE_PATH
+			}
+		}
+		};
 		paths: {
 			base: process.env.NODE_ENV === 'production' ? '/HackJPS-2023-Website' : ''
 		},
