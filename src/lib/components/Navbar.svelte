@@ -23,13 +23,13 @@
   
   <main>
     <div class={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 ${scrolledPastHero ? 'bg-neutral-900 shadow-md' : ''}`}>
-      <Navbar {...navbarProps} class="container mx-auto">
-        <NavBrand href=".">
+      <Navbar {...navbarProps} class="container mx-auto" >
+        <NavBrand href="." class="flex justify-center">
           <img src="./images/hackJPS-logo.png" class="me-3 h-[96px] max-w-auto" alt="HackJPS Logo" />
-          <span class="self-center whitespace-nowrap text-2xl font-semibold dark:text-green-500 text-green-600 font-mono">HackJPS 2025</span>
+          <span class="items-center text-center justify-center whitespace-nowrap text-2xl font-semibold dark:text-green-500 text-green-600 font-mono">HackJPS 2025</span>
         </NavBrand>
         
-        <NavHamburger class="ml-auto focus:ring-2 focus:ring-green-500 rounded md:hidden text-green-200" />
+        
         
         <NavUl class="font-mono ">
           <NavLi href="./#aboutUs" on:click={() => {animateScroll.scrollTo({element: "#aboutUs", offset: -116})}} class="text-xl text-green-200">About</NavLi>
