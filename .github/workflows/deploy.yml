@@ -2,53 +2,55 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [main, svelte-refactor]
-
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-# Allow only one concurrent deployment
-concurrency:
-  group: "pages"
-  cancel-in-progress: true
+    branches: 'main'
 
 jobs:
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  build_site:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      
-      - name: Setup Node.js
+
+      # If you're using pnpm, add this step then change the commands and cache key below to use `pnpm`
+      # - name: Install pnpm
+      #   uses: pnpm/action-setup@v3
+      #   with:
+      #     version: 8
+
+      - name: Install Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
-          cache: 'npm'
-      
+ node-version: 20
+ cache: npm
+
       - name: Install dependencies
         run: npm install --legacy-peer-deps
-      
-      - name: Build
-        run: npm run build
-      
-      - name: Create .nojekyll file
-        run: touch build/.nojekyll
-      
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-      
-      - name: Upload artifact
+
+      - name: build
+        env:
+ BASE_PATH: '/${{ github.event.repository.name }}'
+        run: |
+ npm run build
+
+      - name: Upload Artifacts
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'build'
-      
-      - name: Deploy to GitHub Pages
+ # this should match the `pages` option in your adapter-static options
+ path: 'build/'
+
+  deploy:
+    needs: build_site
+    runs-on: ubuntu-latest
+
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
-
