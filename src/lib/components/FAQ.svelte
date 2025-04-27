@@ -40,17 +40,17 @@
     }
 </script>
 
-<main class="bg-neutral-800 pt-10 px-36 pb-10 font-mono">
+<main class="bg-neutral-800 pt-10 md:px-36 px-5 pb-10 font-mono">
     <!-- Title -->
-    <div class="text-4xl font-mono font-extrabold text-center text-green-200">FAQ</div>
+    <div class="text-4xl font-mono font-extrabold text-center text-green-200 mb-3 md:mb-0">FAQ</div>
 
     <!-- questions and answers -->
     <div>
         <Accordion flush>
             {#each faq.arr as obj} 
                 <AccordionItem>
-                    <span slot="header" class="text-green-200">{obj.question}</span>
-                    <p class="mb-2 text-gray-500 dark:text-neutral-400 whitespace-pre-line">{obj.answer}</p>
+                    <span slot="header" class="text-green-200 text-sm md:text-md max-w-80">{obj.question}</span>
+                    <p class="mb-2 text-gray-500 dark:text-neutral-400 whitespace-pre-line text-sm md:text-md">{obj.answer}</p>
                 </AccordionItem>
             {/each}
         </Accordion>

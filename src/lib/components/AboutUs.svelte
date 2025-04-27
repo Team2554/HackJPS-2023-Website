@@ -1,7 +1,7 @@
 <script lang="ts">
 </script>
 
-<main class="font-mono text-neutral-400 bg-neutral-800 pt-10 px-36" id="aboutUs">
+<main class="font-mono text-neutral-400 bg-neutral-800 pt-10 px-5 md:px-36 text-sm md:text:md" id="aboutUs">
     <div class="text-4xl text-center mb-12 font-extrabold text-green-200">About Us</div>
     <div class="">
         HackJPS will be a hybrid (in person & virtual) hackathon hosted by students of John P. Stevens High School in Edison, NJ during a Staturday in June. This is the fourth iteration of the HackJPS program following successful hybrid and virtual events in 2023 and 2020.
