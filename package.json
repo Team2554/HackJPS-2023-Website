@@ -35,6 +35,7 @@
 	"dependencies": {
 		"@tsparticles/slim": "^3.8.1",
 		"@tsparticles/svelte": "^3.1.1",
+		"svelte-click-outside": "^1.0.0",
 		"svelte-scrollto-element": "^3.1.0"
 	}
 }

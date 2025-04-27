@@ -50,7 +50,7 @@
       border: none !important;
     }
     
-    /* Fix mobile menu background */
+    /* Fix mobi le menu background */
     :global(.navbar div[id^="navbar-"]) {
       background-color: rgba(0, 0, 0, 0.8) !important;
     }
