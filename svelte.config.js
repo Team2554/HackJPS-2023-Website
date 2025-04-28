@@ -8,7 +8,7 @@ const config = {
 			fallback: 'index.html'
 		}),
 		paths: {
-			base: process.env.NODE_ENV === 'production' ? '/HackJPS-2023-Website' : ''
+			base: ''
 		},
 		prerender: {
 			handleHttpError: ({ path, referrer, message }) => {
