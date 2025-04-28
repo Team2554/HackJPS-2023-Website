@@ -2,7 +2,8 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: 'main'
+    branches: 
+      - svelte-refactor
 
 jobs:
   build_site:
@@ -11,7 +12,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # If you're using pnpm, add this step then change the commands and cache key below to use `pnpm`
+      # If you're using pnpm, uncomment below
       # - name: Install pnpm
       #   uses: pnpm/action-setup@v3
       #   with:
@@ -26,7 +27,7 @@ jobs:
       - name: Install dependencies
         run: npm install --legacy-peer-deps
 
-      - name: build
+      - name: Build
         env:
           BASE_PATH: '/${{ github.event.repository.name }}'
         run: |
@@ -35,21 +36,17 @@ jobs:
       - name: Upload Artifacts
         uses: actions/upload-pages-artifact@v3
         with:
- # this should match the `pages` option in your adapter-static options
- path: 'build/'
+          path: 'build/'
 
   deploy:
     needs: build_site
     runs-on: ubuntu-latest
-
     permissions:
       pages: write
       id-token: write
-
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-
     steps:
       - name: Deploy
         id: deployment
