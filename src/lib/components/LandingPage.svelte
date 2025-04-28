@@ -174,5 +174,13 @@
             </div>
         </GradientButton>
     </a>
+    <a href="https://forms.gle/3iSLSnSrwBHXd1jXA">
+        <GradientButton outline color="teal" class="w-full">
+            <div class="gap-2 md:gap-3 p-2 flex items-center justify-center">
+                <img src="./images/google-forms-logo.png" alt="" class="h-[18px] md:h-[24px]">
+                <div class="text-white text-sm md:text-lg">Register</div>
+            </div>
+        </GradientButton>
+    </a>
   </div>
 </main>
