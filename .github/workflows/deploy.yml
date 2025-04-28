@@ -12,12 +12,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # If you're using pnpm, uncomment below
-      # - name: Install pnpm
-      #   uses: pnpm/action-setup@v3
-      #   with:
-      #     version: 8 
-
       - name: Install Node.js
         uses: actions/setup-node@v4
         with:
@@ -48,6 +42,12 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: github-pages  
+          path: .              
+
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
