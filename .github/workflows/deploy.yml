@@ -21,11 +21,25 @@ jobs:
       - name: Install dependencies
         run: npm install --legacy-peer-deps
 
+      - name: Check for CNAME file
+        id: check-cname
+        run: |
+          if [ -f "CNAME" ]; then
+            echo "cname_exists=true" >> $GITHUB_OUTPUT
+          else
+            echo "cname_exists=false" >> $GITHUB_OUTPUT
+          fi
+
       - name: Build
         env:
-          BASE_PATH: '/${{ github.event.repository.name }}'
+          BASE_PATH: ${{ steps.check-cname.outputs.cname_exists == 'true' && '' || format('/{0}', github.event.repository.name) }}
         run: |
           npm run build
+
+      - name: Copy CNAME file to build directory if it exists
+        if: steps.check-cname.outputs.cname_exists == 'true'
+        run: |
+          cp CNAME build/
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
