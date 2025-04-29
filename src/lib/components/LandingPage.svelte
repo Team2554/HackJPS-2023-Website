@@ -146,7 +146,7 @@
   </div>
   
   <div class="text-xs md:text-sm mx-4 md:mx-0 text-neutral-500 font-semibold font-mono mt-3 max-w-md md:max-w-2xl">
-      HACKJPS 2025 will be hosted on Saturday, June 15th, stay tuned for updates! Join our Discord or see the archive section for past resources
+      HACKJPS 2025 will be hosted on Saturday, June 14th, stay tuned for updates! Join our Discord or see the archive section for past resources
   </div>
 
   <div class="flex flex-col md:flex-row justify-center mt-6 md:mt-10 gap-4 md:gap-5 w-full md:w-fit px-4 md:px-0">

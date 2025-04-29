@@ -16,7 +16,7 @@
             },
             {
                 question: "How do I attend in person?",
-                answer: `Our in-person venue will be held on Saturday, June 15th at John P. Stevens High School (855 Grove Ave, Edison, NJ, 08820) in the cafeteria. You don't need to be there the whole time, but our opening ceremony will be held live at that location around 9. You also don't need to be an Edison student to attend. However, you must register in order to attend. Pizza will be provided for lunch free of charge. Furthermore, although the venue will be open for six hours, HackJPS will continue virtually for the remainder of the competition period.
+                answer: `Our in-person venue will be held on Saturday, June 14th at John P. Stevens High School (855 Grove Ave, Edison, NJ, 08820) in the cafeteria. You don't need to be there the whole time, but our opening ceremony will be held live at that location around 9. You also don't need to be an Edison student to attend. However, you must register in order to attend. Pizza will be provided for lunch free of charge. Furthermore, although the venue will be open for six hours, HackJPS will continue virtually for the remainder of the competition period.
                         
                         Attending in person would be a great opportunity to make some new friends and form a team with other participants like yourself.`
             },
@@ -26,7 +26,7 @@
             },
             {
                 question: "When is it?",
-                answer: "Our in-person kickoff is on Saturday, June 15th at 9 am to 3pm. Submissions are due the next day at 6:30 pm. This is a hydbird event, so you don't have to come in person to participate!"
+                answer: "Our in-person kickoff is on Saturday, June 14th at 9 am to 3pm. Submissions are due the next day at 6:30 pm. This is a hydbird event, so you don't have to come in person to participate!"
             },
             {
                 question: "Do I need coding/hackathon experience to attend?",
