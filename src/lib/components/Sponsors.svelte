@@ -22,6 +22,7 @@
               loading="lazy"
             />
           </div>
+          
           <div class="text-center text-green-200 font-mono font-semibold text-sm sm:text-base my-2">
             {sponsor.name}
           </div>

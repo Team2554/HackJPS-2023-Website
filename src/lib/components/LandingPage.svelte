@@ -132,7 +132,7 @@
 
 <main class="relative z-1 flex justify-center items-center text-center min-h-screen w-screen flex-col px-4 py-8 md:py-10">
 
-    <div class="my-2 md:my-0">
+    <div class="my-2 md:my-1">
         <img src="./images/hackJPS-logo.png" alt="HACKJPS-LOGO" class="h-[250px] md:h-[400px] max-w-full pt-10 md:pt-0">
     </div>
 
