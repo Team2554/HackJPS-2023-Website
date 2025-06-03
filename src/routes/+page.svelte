@@ -4,6 +4,7 @@
     import AboutUs from "$lib/components/AboutUs.svelte";
     import Faq from "$lib/components/FAQ.svelte";
 	import Archive from '$lib/components/Archive.svelte';
+	import Sponsors from '$lib/components/Sponsors.svelte';
 
     function scrollToSection(section: string) {
         animateScroll.scrollTo({ element: section, offset: -116})
@@ -13,7 +14,7 @@
 
 <main>
     <div class="flex justify-center items-center text-center h-screen w-screen flex-col"> 
-        <LandingPage on:about={(e) => {scrollToSection(e.detail); console.log("here")}} class="z-10"/>
+        <LandingPage on:about={(e) => {scrollToSection(e.detail);}} class="z-10"/>
     </div>
 
     <div class="" id="aboutUs">
@@ -32,5 +33,9 @@
 
     <div>
         <Archive/>
+    </div>
+
+    <div>
+        <Sponsors/>
     </div>
 </main>

@@ -33,6 +33,7 @@
 		"vite": "^6.2.5"
 	},
 	"dependencies": {
+		"@number-flow/svelte": "^0.3.7",
 		"@tsparticles/slim": "^3.8.1",
 		"@tsparticles/svelte": "^3.1.1",
 		"svelte-click-outside": "^1.0.0",
