@@ -132,22 +132,21 @@
 
 <main class="relative z-1 flex justify-center items-center text-center min-h-screen w-screen flex-col px-4 py-8 md:py-10">
 
-  <div class="my-2 md:my-0">
-      <img src="./images/hackJPS-logo.png" alt="HACKJPS-LOGO" class="h-[250px] md:h-[400px] max-w-full pt-10 md:pt-0">
-  </div>
+    <div class="my-2 md:my-0">
+        <img src="./images/hackJPS-logo.png" alt="HACKJPS-LOGO" class="h-[250px] md:h-[400px] max-w-full pt-10 md:pt-0">
+    </div>
 
     <div class="md:text-7xl text-4xl font-mono font-bold text-green-300 pt-0 md:pt-0 mb-5">
         COMING SOON
     </div>
 
+    <div class="text-sm font-mono font-bold text-neutral-400 mx-4 md:mx-0 md:text-lg max-w-md md:max-w-2xl">
+        A beginner-friendly hackathon held in person and virtually at John P. Stevens High School
+    </div>
 
-  <div class="text-sm font-mono font-bold text-neutral-400 mx-4 md:mx-0 md:text-lg max-w-md md:max-w-2xl">
-      A beginner-friendly hackathon held in person and virtually at John P. Stevens High School
-  </div>
-  
-  <div class="text-xs md:text-sm mx-4 md:mx-0 text-neutral-500 font-semibold font-mono mt-3 max-w-md md:max-w-2xl">
-      HACKJPS 2025 will be hosted on Saturday, June 14th, stay tuned for updates! Join our Discord or see the archive section for past resources
-  </div>
+    <div class="text-xs md:text-sm mx-4 md:mx-0 text-neutral-500 font-semibold font-mono mt-3 max-w-md md:max-w-2xl">
+        HACKJPS 2025 will be hosted on Saturday, June 14th, stay tuned for updates! Join our Discord or see the archive section for past resources
+    </div>
 
   <div class="flex flex-col md:flex-row justify-center mt-6 md:mt-10 gap-4 md:gap-5 w-full md:w-fit px-4 md:px-0">
     <a href="https://discord.gg/KCU5qG7R9m" class="w-full md:w-auto">
