@@ -32,10 +32,11 @@
     </div>
 
     <div>
-        <Archive/>
+        <Sponsors/>
     </div>
 
     <div>
-        <Sponsors/>
+        <Archive/>
     </div>
+
 </main>
