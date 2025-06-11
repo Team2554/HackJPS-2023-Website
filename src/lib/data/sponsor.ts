@@ -17,6 +17,10 @@ export const sponsorData: Sponsor[] = [
     imageLink: "https://cdn4.iconfinder.com/data/icons/logos-brands-in-colors/3000/figma-logo-512.png",
   },
   {
+    name: "Xmind",
+    imageLink: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTthW4921bhmUk4R5jeLsCCi_3ezYwmsMgljQ&s"
+  },
+  {
     name: "Art of Problem Solving",
     imageLink: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_APuaT56mZMnzPxBdPZ_ENDEw6oI2Td6NaA&s",
   },
