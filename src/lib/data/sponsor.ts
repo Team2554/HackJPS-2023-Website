@@ -32,6 +32,10 @@ export const sponsorData: Sponsor[] = [
       "https://www.interviewcake.com/static//images/cake_white_on_blue_600.png",
   },
   {
+    name: "Flatlogic",
+    imageLink: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpYvR__2a_QgIN-6Fnv3D7ktpznczuGe9QQQ&s"
+  },
+  {
     name: "Verbwire",
     imageLink:
       "https://images.crunchbase.com/image/upload/c_pad,f_auto,q_auto:eco,dpr_1/zwufzwlrlgablh5vqwrd",
