@@ -10,23 +10,25 @@
     
     <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 sm:gap-5 md:gap-8">
       {#each sponsorData as sponsor}
-        <div 
-          class="bg-white/10 backdrop-blur-sm rounded-xl p-1 shadow-xl transition-all duration-300 hover:shadow-green-300/20 hover:scale-105 hover:bg-white/15 group"
-          title={sponsor.name}
-        >
-          <div class="bg-white rounded-lg w-full aspect-square flex items-center justify-center p-3 sm:p-4 overflow-hidden">
-            <img 
-              src={sponsor.imageLink || "/placeholder.svg?height=150&width=150"} 
-              alt="{sponsor.name} logo"
-              class="max-w-full max-h-full object-contain transition-transform duration-300 group-hover:scale-110"
-              loading="lazy"
-            />
-          </div>
+        <a href={sponsor.url || "/#sponsors"}>
+            <div 
+            class="bg-white/10 backdrop-blur-sm rounded-xl p-1 shadow-xl transition-all duration-300 hover:shadow-green-300/20 hover:scale-105 hover:bg-white/15 group"
+            title={sponsor.name}
+          >
+            <div class="bg-white rounded-lg w-full aspect-square flex items-center justify-center p-3 sm:p-4 overflow-hidden">
+              <img 
+                src={sponsor.imageLink || "/placeholder.svg?height=150&width=150"} 
+                alt="{sponsor.name} logo"
+                class="max-w-full max-h-full object-contain transition-transform duration-300 group-hover:scale-110"
+                loading="lazy"
+              />
+            </div>
 
-          <div class="text-center text-green-200 font-mono font-semibold text-sm sm:text-base my-2">
-            {sponsor.name}
+            <div class="text-center text-green-200 font-mono font-semibold text-sm sm:text-base my-2">
+              {sponsor.name}
+            </div>
           </div>
-        </div>
+        </a>
       {/each}
     </div>
   </div>
