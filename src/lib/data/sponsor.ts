@@ -1,6 +1,7 @@
 export interface Sponsor {
   imageLink: string
-  name: string
+  name: string,
+  url?: string
 }
 
 export const sponsorData: Sponsor[] = [
@@ -10,7 +11,8 @@ export const sponsorData: Sponsor[] = [
   },
   {
     name: "CodeCrafters",
-    imageLink: "https://media.licdn.com/dms/image/v2/D560BAQEqzh_Uhd_rbw/company-logo_200_200/company-logo_200_200/0/1684437783960/codecraftersio_logo?e=2147483647&v=beta&t=xehlblVMw6zGFt5W7qBeiK4MkSjRxbxndVn_SSA-4h0"
+    imageLink: "https://media.licdn.com/dms/image/v2/D560BAQEqzh_Uhd_rbw/company-logo_200_200/company-logo_200_200/0/1684437783960/codecraftersio_logo?e=2147483647&v=beta&t=xehlblVMw6zGFt5W7qBeiK4MkSjRxbxndVn_SSA-4h0",
+    url: "https://codecrafters.io/"
   },
   {
     name: "Figma",
