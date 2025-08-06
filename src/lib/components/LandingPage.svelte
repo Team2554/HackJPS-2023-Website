@@ -136,10 +136,6 @@
         <img src="./images/hackJPS-logo.png" alt="HACKJPS-LOGO" class="h-[250px] md:h-[400px] max-w-full pt-10 md:pt-0">
     </div>
 
-    <div class="md:text-7xl text-4xl font-mono font-bold text-green-300 pt-0 md:pt-0 mb-5">
-        COMING SOON
-    </div>
-
     <div class="text-sm font-mono font-bold text-neutral-400 mx-4 md:mx-0 md:text-lg max-w-md md:max-w-2xl">
         A beginner-friendly hackathon held in person and virtually at John P. Stevens High School
     </div>

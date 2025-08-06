@@ -10,7 +10,7 @@
     
     <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 sm:gap-5 md:gap-8">
       {#each sponsorData as sponsor}
-        <a href={sponsor.url || "/#sponsors"}>
+        <a href={sponsor.url || "/#sponsors"} target="_blank" rel="noopener noreferrer">
             <div 
             class="bg-white/10 backdrop-blur-sm rounded-xl p-1 shadow-xl transition-all duration-300 hover:shadow-green-300/20 hover:scale-105 hover:bg-white/15 group"
             title={sponsor.name}
