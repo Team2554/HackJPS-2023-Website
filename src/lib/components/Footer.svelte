@@ -25,6 +25,7 @@
                 <i class="fa-solid fa-envelope"></i>
                 <span>Contact Us</span>
             </a>
+            
         </div>
 
         <div class="text-center mb-8">

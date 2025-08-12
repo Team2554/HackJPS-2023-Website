@@ -7,7 +7,7 @@ export interface Sponsor {
 export const sponsorData: Sponsor[] = [
   {
     name: "NordVPN",
-    imageLink: "https://upload.wikimedia.org/wikipedia/en/thumb/2/24/NordVPN_Logo_square.svg/1200px-NordVPN_Logo_square.svg.png",
+    imageLink: "https://res.cloudinary.com/nordsec/image/upload/q_auto,f_auto/v1/nord-security-web//homepage/2025/Products/nordvpn.png",
     url: "https://nordvpn.com"
   },
   {
