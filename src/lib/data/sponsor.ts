@@ -8,7 +8,7 @@ export const sponsorData: Sponsor[] = [
   {
     name: "NordVPN",
     imageLink: "https://res.cloudinary.com/nordsec/image/upload/q_auto,f_auto/v1/nord-security-web//homepage/2025/Products/nordvpn.png",
-    url: "https://nordvpn.com"
+    url: "https://nordvpn.com/hackathons"
   },
   {
     name: "NordPass",
