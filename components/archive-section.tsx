@@ -6,7 +6,7 @@ import { SafeExternalLink } from "@/components/safe-external-link"
 const archiveData = [
   {
     year: "2025",
-    organizers: "Anumeha Haldar, Aditya Saini, Abir Modak, Trisha Panchangmath, and Aryan Mittal",
+    organizers: "Anumeha Haldar, Aditya Saini, Abir Modak, Trisha Panchangmath, Neerav Gupta, and Aryan Mittal",
     links: [
       { label: "Project Gallery", href: "https://hackjps25.devpost.com/project-gallery" },
       { label: "Livestream Recording", href: "https://youtu.be/kVIHTpSUaTw" },

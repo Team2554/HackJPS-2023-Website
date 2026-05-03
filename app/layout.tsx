@@ -16,7 +16,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: `${SITE_CONFIG.siteName} ${SITE_CONFIG.year} | Build the Future`,
+  title: `${SITE_CONFIG.siteName} ${SITE_CONFIG.year}`,
   description: `Join ${SITE_CONFIG.siteName} ${SITE_CONFIG.year} for a ${SITE_CONFIG.buildDurationLabel.toLowerCase()} high-school hackathon in Edison, NJ.`,
   manifest: "/site.webmanifest",
   icons: {

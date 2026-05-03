@@ -19,7 +19,7 @@ export const SITE_CONFIG = {
     register: "https://forms.hackjps.org/register",
     venueMap:
       "https://www.google.com/maps/search/?api=1&query=John+P.+Stevens+High+School,+855+Grove+Ave,+Edison,+NJ",
-    sponsorContact: "mailto:sponsors@hackjps.org",
+    sponsorContact: "https://drive.google.com/file/d/1IbdjZukoFwasve6A_WyDpvfJGch2q9NL/view?usp=sharing",
     generalContact: "mailto:hello@hackjps.org",
   },
 } as const

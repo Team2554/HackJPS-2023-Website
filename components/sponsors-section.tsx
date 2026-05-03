@@ -1,17 +1,7 @@
 import Image from "next/image"
 import { SITE_CONFIG } from "@/lib/site-config"
 
-const sponsors = [
-  { name: "TechCorp" },
-  { name: "InnovateLabs" },
-  { name: "CloudBase" },
-  { name: "DataFlow" },
-  { name: "CodeCraft" },
-  { name: "DevTools" },
-  { name: "AppForge" },
-  { name: "ByteWave" },
-  { name: "StackPro" },
-]
+const sponsors = []
 
 export function SponsorsSection() {
   return (
@@ -28,29 +18,39 @@ export function SponsorsSection() {
             </p>
 
             {/* Sponsor list - simple text layout */}
-            <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-              {sponsors.map((sponsor) => (
-                <div
-                  key={sponsor.name}
-                  className="relative p-3 border border-foreground/15 bg-card/10 hover:bg-foreground/5 transition-all flex items-center justify-center min-h-[160px]"
-                >
-                  {/* Detached corners */}
-                  <div className="absolute -left-[4px] -top-[4px] h-3 w-3 border-l-2 border-t-2 border-foreground" />
-                  <div className="absolute -right-[4px] -top-[4px] h-3 w-3 border-r-2 border-t-2 border-foreground" />
-                  <div className="absolute -bottom-[4px] -left-[4px] h-3 w-3 border-b-2 border-l-2 border-foreground" />
-                  <div className="absolute -bottom-[4px] -right-[4px] h-3 w-3 border-b-2 border-r-2 border-foreground" />
-
-                  <div className="relative">
-                    <Image
-                      src="/placeholder-logo.svg"
-                      alt={`${sponsor.name} logo placeholder`}
-                      width={200}
-                      height={150}
-                      className="h-auto w-full max-w-[200px]"
-                    />
-                  </div>
+            <div className="mt-16">
+              {sponsors.length === 0 ? (
+                <div className="flex items-center justify-center py-16">
+                  <p className="text-4xl text-muted-foreground font-subheading">
+                    Sponsors coming soon...
+                  </p>
                 </div>
-              ))}
+              ) : (
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                  {sponsors.map((sponsor) => (
+                    <div
+                      key={sponsor.name}
+                      className="relative p-3 border border-foreground/15 bg-card/10 hover:bg-foreground/5 transition-all flex items-center justify-center min-h-[160px]"
+                    >
+                      {/* Detached corners */}
+                      <div className="absolute -left-[4px] -top-[4px] h-3 w-3 border-l-2 border-t-2 border-foreground" />
+                      <div className="absolute -right-[4px] -top-[4px] h-3 w-3 border-r-2 border-t-2 border-foreground" />
+                      <div className="absolute -bottom-[4px] -left-[4px] h-3 w-3 border-b-2 border-l-2 border-foreground" />
+                      <div className="absolute -bottom-[4px] -right-[4px] h-3 w-3 border-b-2 border-r-2 border-foreground" />
+
+                      <div className="relative">
+                        <Image
+                          src="/placeholder-logo.svg"
+                          alt={`${sponsor.name} logo placeholder`}
+                          width={200}
+                          height={150}
+                          className="h-auto w-full max-w-[200px]"
+                        />
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
             </div>
 
             <div className="mt-12">
