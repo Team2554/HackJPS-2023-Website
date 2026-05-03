@@ -1,7 +1,7 @@
 import Image from "next/image"
 import { SITE_CONFIG } from "@/lib/site-config"
 
-const sponsors = []
+const sponsors: any[] = []
 
 export function SponsorsSection() {
   return (
