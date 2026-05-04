@@ -1,7 +1,7 @@
 "use client"
 
-import { useState } from "react"
-import { Footer } from "./footer"
+import { useEffect, useRef, useState } from "react"
+import { SITE_CONFIG } from "@/lib/site-config"
 
 const faqs = [
   {
@@ -32,6 +32,36 @@ const faqs = [
 
 export function FAQSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(null)
+  const containerRef = useRef<HTMLDivElement>(null)
+  const textRef = useRef<HTMLHeadingElement>(null)
+  const [scaleX, setScaleX] = useState(1)
+
+  useEffect(() => {
+    const fitTextToWidth = () => {
+      const containerWidth = containerRef.current?.clientWidth ?? 0
+      const textWidth = textRef.current?.scrollWidth ?? 0
+      const safetyInset = 2
+
+      if (containerWidth > 0 && textWidth > 0) {
+        setScaleX((containerWidth - safetyInset) / textWidth)
+      }
+    }
+
+    fitTextToWidth()
+
+    const observer = typeof ResizeObserver !== "undefined" ? new ResizeObserver(fitTextToWidth) : null
+    if (observer && containerRef.current) observer.observe(containerRef.current)
+
+    document.fonts?.ready?.then?.(fitTextToWidth).catch(() => {
+      // Ignore font-loading event-style rejections and keep fallback sizing.
+    })
+    window.addEventListener("resize", fitTextToWidth)
+
+    return () => {
+      observer?.disconnect()
+      window.removeEventListener("resize", fitTextToWidth)
+    }
+  }, [])
 
   const toggleFaq = (index: number) => {
     setOpenIndex(openIndex === index ? null : index)
@@ -85,7 +115,19 @@ export function FAQSection() {
         </div>
       </div>
       <div className="h-32" />
-      <Footer />
+      <div className="relative flex flex-col items-center justify-center overflow-visible p-0">
+        <div className="pointer-events-none absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-black via-black/80 to-transparent" />
+        <div ref={containerRef} className="w-full">
+          <h2
+            ref={textRef}
+            className="mx-auto w-max select-none font-display text-[23vw] font-bold uppercase leading-[0.7] tracking-tighter text-foreground/10"
+            style={{ transform: `scaleX(${scaleX})`, transformOrigin: "center" }}
+            aria-label={SITE_CONFIG.siteName}
+          >
+            {SITE_CONFIG.siteName.toUpperCase()}
+          </h2>
+        </div>
+      </div>
     </section>
   )
 }

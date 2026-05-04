@@ -14,7 +14,7 @@ export function FloatingResourcesButton() {
   }
 
   return (
-    <div className="fixed bottom-6 right-6 z-50 group scale-90">
+    <div className="group fixed bottom-4 right-4 z-50 scale-80 md:bottom-6 md:right-6 md:scale-90">
       {/* Container with sharp corners and thin border */}
       <div className="relative border border-[#16a34a]/30 bg-[#16a34a]/5 p-1 backdrop-blur-sm">
         {/* Corner accents */}
@@ -25,11 +25,11 @@ export function FloatingResourcesButton() {
 
         <Button 
           asChild 
-          className="relative rounded-none px-8 py-6 text-base font-bold tracking-widest transition-all hover:bg-[#16a34a]/10 active:scale-95 bg-transparent text-[#16a34a] border-none shadow-none font-display"
+          className="relative rounded-none bg-transparent px-6 py-4 text-sm font-bold tracking-[0.15em] text-[#16a34a] transition-all hover:bg-[#16a34a]/10 active:scale-95 border-none shadow-none font-display md:px-8 md:py-6 md:text-base md:tracking-widest"
         >
-          <Link href={SITE_CONFIG.links.resources} className="flex items-center gap-4">
+          <Link href={SITE_CONFIG.links.resources} className="flex items-center gap-2 md:gap-4">
             HACKER RESOURCES
-            <span className="text-xl font-light opacity-80">&gt;</span>
+            <span className="text-base font-light opacity-80 md:text-xl">&gt;</span>
           </Link>
         </Button>
       </div>

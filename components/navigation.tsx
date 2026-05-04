@@ -41,7 +41,7 @@ export function Navigation() {
   const formatNumber = (num: number) => num.toString().padStart(2, '0')
 
   return (
-    <div className="relative w-full text-[#c7c3b5] font-mono tracking-[0.2em] uppercase px-0 pt-4 pb-12">
+    <div className="relative hidden w-full px-0 pt-4 pb-12 font-mono tracking-[0.2em] uppercase text-[#c7c3b5] md:block">
       {/* SVG Line with geometric kink - Increased stroke weight and moved branding below */}
       <div className="absolute top-8 left-0 w-full overflow-visible pointer-events-none opacity-50">
         <svg width="100%" height="40" viewBox="0 0 1000 40" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">

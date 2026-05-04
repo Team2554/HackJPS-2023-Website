@@ -17,7 +17,6 @@ export type ResourceSection = {
 export const RESOURCE_SECTIONS: ResourceSection[] = [
   {
     id: "general",
-    menu: "Event Operations",
     title: "General\nInformation",
     subtitle: "Core event logistics and how to get started once you arrive.",
     blocks: [
@@ -60,10 +59,10 @@ export const RESOURCE_SECTIONS: ResourceSection[] = [
         ],
       },
     ],
+    menu: ""
   },
   {
     id: "rules",
-    menu: "Participation Policy",
     title: "Event\nRules",
     subtitle: "Keep projects fair, safe, and eligible for final judging.",
     blocks: [
@@ -90,6 +89,7 @@ export const RESOURCE_SECTIONS: ResourceSection[] = [
         ],
       },
     ],
+    menu: ""
   },
 ]
 
@@ -101,5 +101,6 @@ export const RESOURCE_MENU_ITEMS = RESOURCE_SECTIONS.map((section) => ({
 export const RESOURCE_QUICK_LINKS = [
   { label: "Discord", href: SITE_CONFIG.links.discord },
   { label: "Devpost", href: SITE_CONFIG.links.devpost },
+  { label: "Registration Form", href: SITE_CONFIG.links.register },
   { label: "Venue Map", href: SITE_CONFIG.links.venueMap },
 ] as const

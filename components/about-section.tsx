@@ -5,7 +5,7 @@ export function AboutSection() {
     <section id="about" className="relative flex min-h-screen items-center px-4 py-24 md:px-6 lg:px-8 overflow-hidden">
       <div className="grid w-full grid-cols-1 gap-12 lg:grid-cols-2 items-center">
         {/* Left side: Hawk Statue Image */}
-        <div className="relative h-[600px] md:h-[800px] w-full lg:h-[900px] pointer-events-none select-none overflow-hidden">
+        <div className="hidden lg:block relative h-[600px] md:h-[800px] w-full lg:h-[900px] pointer-events-none select-none overflow-hidden">
           <div className="relative h-full w-full scale-125 translate-y-[10%]">
             <Image
               src="/hawk staue alternte view.png"

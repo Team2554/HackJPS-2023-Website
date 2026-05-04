@@ -9,12 +9,12 @@ export function HeroSection() {
       
       {/* Background Hawk Statue */}
       <div className="absolute inset-0 z-0 pointer-events-none select-none overflow-hidden">
-        <div className="relative h-[110%] w-full translate-y-[10%]">
+        <div className="relative h-[130%] w-full translate-y-[3%] scale-[1.2] md:h-[110%] md:translate-y-[10%] md:scale-100">
           <Image
             src="/hawk-statue-hero.png"
             alt="Hawk Statue"
             fill
-            className="object-contain object-right-bottom"
+            className="object-contain object-[98%_32%] md:object-right-bottom"
             priority
           />
           {/* Vignette/Fade effect */}
@@ -23,9 +23,9 @@ export function HeroSection() {
         </div>
       </div>
 
-      <div className="flex-1 flex flex-col justify-center w-full relative z-10">
+      <div className="relative z-10 flex flex-1 w-full flex-col justify-center -mt-16 md:mt-0">
         {/* Main headline */}
-        <h1 className="font-display text-5xl font-bold leading-none tracking-tighter text-foreground sm:text-7xl md:text-8xl lg:text-[12rem] xl:text-[14rem] mt-16 md:mt-8">
+        <h1 className="mt-0 font-display text-5xl font-bold leading-none tracking-tighter text-foreground sm:text-7xl md:mt-8 md:text-8xl lg:text-[12rem] xl:text-[14rem]">
           {SITE_CONFIG.siteName.toUpperCase()}
         </h1>
 
@@ -48,7 +48,7 @@ export function HeroSection() {
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2">
+      <div className="absolute bottom-10 left-1/2 hidden -translate-x-1/2 md:block">
         <div className="flex h-10 w-6 items-start justify-center rounded-full border border-muted-foreground/30 p-2">
           <div className="h-2 w-1 animate-bounce rounded-full bg-muted-foreground" />
         </div>
