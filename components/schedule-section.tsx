@@ -6,37 +6,57 @@ import { cn } from "@/lib/utils"
 import { SafeExternalLink } from "@/components/safe-external-link"
 import { SITE_CONFIG } from "@/lib/site-config"
 
-const schedule = {
-  "Day 1 - March 29": [
-    { time: "8:00 AM", event: "Check-in & Breakfast" },
-    { time: "9:30 AM", event: "Opening Ceremony" },
-    { time: "10:30 AM", event: "Team Formation" },
-    { time: "11:00 AM", event: "Hacking Begins!" },
-    { time: "12:30 PM", event: "Lunch" },
-    { time: "2:00 PM", event: "Workshop: Intro to AI/ML" },
-    { time: "4:00 PM", event: "Workshop: Building APIs" },
-    { time: "6:30 PM", event: "Dinner" },
-    { time: "8:00 PM", event: "Mentor Office Hours" },
-    { time: "10:00 PM", event: "Game Night & Snacks" },
-  ],
-  "Day 2 - March 30": [
-    { time: "12:00 AM", event: "Midnight Snacks" },
-    { time: "8:00 AM", event: "Breakfast" },
-    { time: "10:00 AM", event: "Soft Deadline" },
-    { time: "12:00 PM", event: "Hacking Ends & Lunch" },
-    { time: "1:30 PM", event: "Judging Begins" },
-    { time: "4:30 PM", event: "Closing Ceremony" },
-    { time: "5:30 PM", event: "Networking Reception" },
-  ],
-} as const
+type ScheduleItem = { time: string; event: string }
+type ScheduleDay = {
+  label: string
+  dateLabel: string
+  items: ScheduleItem[]
+}
 
-type DayKey = keyof typeof schedule
+const schedule: ScheduleDay[] = [
+  {
+    label: "Day 1",
+    dateLabel: "March 29",
+    items: [
+      { time: "4:00 PM", event: "Check-in Begins (In-Person + Livestream Opens)" },
+      { time: "4:15 PM", event: "Opening Ceremony (30 min)" },
+      { time: "4:45 PM", event: "Code4Hope Workshop: Hack to Business (45 min)" },
+      { time: "5:30 PM", event: "Working Period" },
+      { time: "6:15 PM", event: "Dinner" },
+      { time: "6:45 PM", event: "Working Period" },
+      { time: "8:00 PM", event: "Day 1 Wrap-Up" },
+    ],
+  },
+  {
+    label: "Day 2",
+    dateLabel: "March 30",
+    items: [
+      { time: "9:00 AM", event: "Working Period Begins" },
+      { time: "12:30 PM", event: "Lunch Break" },
+      { time: "1:30 PM", event: "Working Period" },
+      { time: "6:30 PM", event: "Dinner Break" },
+      { time: "7:30 PM", event: "Working Period" },
+      { time: "11:00 PM", event: "Late-Night Working Period" },
+    ],
+  },
+  {
+    label: "Day 3",
+    dateLabel: "March 31",
+    items: [
+      { time: "8:00 AM", event: "Working Period Begins" },
+      { time: "12:30 PM", event: "Lunch Break" },
+      { time: "1:30 PM", event: "Working Period" },
+      { time: "5:00 PM", event: "Dinner Break" },
+      { time: "6:00 PM", event: "Working Period" },
+      { time: "9:00 PM", event: "Day 3 Wrap-Up" },
+    ],
+  },
+]
 
 export function ScheduleSection() {
-  const days = Object.keys(schedule) as DayKey[]
-  const [activeDay, setActiveDay] = useState<DayKey>(days[0])
+  const [activeDay, setActiveDay] = useState<number>(0)
 
-  const currentSchedule = schedule[activeDay] || []
+  const currentSchedule = schedule[activeDay]?.items || []
 
   return (
     <section id="schedule" className="min-h-screen px-6 py-24 sm:py-32">
@@ -54,37 +74,32 @@ export function ScheduleSection() {
           </SafeExternalLink>
         </div>
 
-        {/* Day tabs */}
         <div className="mt-12 flex gap-4" style={{ fontFamily: "'ShareTechMono', monospace" }}>
-          {days.map((day) => (
+          {schedule.map((day, index) => (
             <button
-              key={day}
-              onClick={() => setActiveDay(day)}
+              key={day.label}
+              onClick={() => setActiveDay(index)}
               className={cn(
                 "relative px-8 py-3 text-sm font-bold uppercase tracking-widest transition-all",
-                activeDay === day 
-                  ? "bg-accent text-accent-foreground border-transparent" 
+                activeDay === index
+                  ? "bg-accent text-accent-foreground border-transparent"
                   : "bg-transparent text-muted-foreground border border-foreground/15 hover:bg-foreground/5"
               )}
             >
-              {day}
+              <span className="sm:hidden">{day.label}</span>
+              <span className="hidden sm:inline">{day.label} - {day.dateLabel}</span>
             </button>
           ))}
         </div>
 
-        {/* Schedule list */}
         <div className="mt-10 space-y-0">
           {currentSchedule.map((item) => (
             <div
               key={`${item.time}-${item.event}`}
               className="flex items-center gap-6 border-t border-border/50 py-4"
             >
-              <div className="w-24 shrink-0 text-sm font-medium text-muted-foreground">
-                {item.time}
-              </div>
-              <div className="flex-1 font-medium text-foreground">
-                {item.event}
-              </div>
+              <div className="w-24 shrink-0 text-sm font-medium text-muted-foreground">{item.time}</div>
+              <div className="flex-1 font-medium text-foreground">{item.event}</div>
             </div>
           ))}
         </div>

@@ -67,6 +67,10 @@ export function TerminalLoading() {
     }
   }, [])
 
+  const handleSkip = () => {
+    setIsVisible(false)
+  }
+
   return (
     <AnimatePresence>
       {isVisible && (
@@ -76,6 +80,7 @@ export function TerminalLoading() {
           transition={{ duration: 0.8, ease: "easeInOut" }}
           className="fixed inset-0 z-[100] flex items-start justify-start bg-black p-6 md:p-12"
           style={{ fontFamily: "'ShareTechMono', monospace" }}
+          onClick={handleSkip}
         >
           <div className="w-full max-w-4xl">
             <div className="flex flex-col space-y-4 text-xl md:text-3xl tracking-tight text-[#ede8d8]">

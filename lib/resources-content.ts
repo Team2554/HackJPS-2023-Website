@@ -23,8 +23,9 @@ export const RESOURCE_SECTIONS: ResourceSection[] = [
       {
         heading: "Opening Ceremony",
         body: [
-          "Check-in opens at 8:00 AM in the main atrium. Opening remarks begin at 9:00 AM.",
-          "If the auditorium reaches capacity, overflow seating and live stream screens will be available in adjacent rooms.",
+          "Day 1 (March 29) begins at 4:00 PM and runs through 8:00 PM as a full in-person kickoff with livestream support.",
+          "Opening Ceremony starts at 4:15 PM (30 minutes), followed by Code4Hope's Hack to Business workshop at 4:45 PM (45 minutes).",
+          "After the workshop, participants move into team formation, dinner, and working periods through the 8:00 PM wrap-up.",
         ],
       },
       {
