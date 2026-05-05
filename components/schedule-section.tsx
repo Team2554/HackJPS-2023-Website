@@ -16,7 +16,7 @@ type ScheduleDay = {
 const schedule: ScheduleDay[] = [
   {
     label: "Day 1",
-    dateLabel: "March 29",
+    dateLabel: "May 29",
     items: [
       { time: "4:00 PM", event: "Check-in Begins (In-Person + Livestream Opens)" },
       { time: "4:15 PM", event: "Opening Ceremony (30 min)" },
@@ -29,7 +29,7 @@ const schedule: ScheduleDay[] = [
   },
   {
     label: "Day 2",
-    dateLabel: "March 30",
+    dateLabel: "May 30",
     items: [
       { time: "9:00 AM", event: "Working Period Begins" },
       { time: "12:30 PM", event: "Lunch Break" },
@@ -41,7 +41,7 @@ const schedule: ScheduleDay[] = [
   },
   {
     label: "Day 3",
-    dateLabel: "March 31",
+    dateLabel: "May 31",
     items: [
       { time: "8:00 AM", event: "Working Period Begins" },
       { time: "12:30 PM", event: "Lunch Break" },
