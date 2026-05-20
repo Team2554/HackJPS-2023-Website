@@ -31,7 +31,7 @@ export function AboutSection() {
             Participation will be open to middle and high school students (aged 13+) from Edison as well as from other locations or school districts. Participants may have any level of experience, or none at all. We are welcoming to beginners and experts alike!
             <br />
             <br />
-            Additionally, participants will be able to attend in-person or virtual workshops hosted by sponsors or student organizations, exposing them to a multitude of other topics that might interest them.
+            Additionally, participants will be able to attend virtual workshops hosted by sponsors or student organizations, exposing them to a multitude of other topics that might interest them.
           </p>
         </div>
       </div>

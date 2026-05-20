@@ -18,37 +18,22 @@ export const RESOURCE_SECTIONS: ResourceSection[] = [
   {
     id: "general",
     title: "General\nInformation",
-    subtitle: "Core event logistics and how to get started once you arrive.",
+    subtitle: "Core event logistics and how to get started.",
     blocks: [
       {
         heading: "Opening Ceremony",
         body: [
-          "Day 1 (May 29) begins at 4:00 PM and runs through 8:00 PM as a full in-person kickoff with livestream support.",
+          "Day 1 (May 29) begins at 4:00 PM and runs through 8:00 PM as a full virtual kickoff.",
           "Opening Ceremony starts at 4:15 PM (30 minutes), followed by Code4Hope's Hack to Business workshop at 4:45 PM (45 minutes).",
           "After the workshop, participants move into team formation, dinner, and working periods through the 8:00 PM wrap-up.",
         ],
       },
       {
-        heading: "WiFi",
-        bullets: [
-          "Network: HACKJPS",
-          "Use a non-school email for guest access",
-          "Save your temporary access code in case you reconnect on another device",
-        ],
-      },
-      {
-        heading: "Building Access",
-        body: [
-          "Primary doors remain open during staffed hours.",
-          "Participants will not be able to repeatedly enter and exit the venue.",
-        ],
-      },
-      {
         heading: "Food, Rest, and Safety",
         bullets: [
-          "Meals and snacks will be available for purchase at the in-person event",
+          "Meals and snacks are on your own during the virtual event",
           "Bring a water bottle, charger, and any personal medication you need",
-          "If you need immediate help, go to the check-in desk or message staff in Discord",
+          "If you need immediate help, message staff in Discord",
         ],
       },
       {
@@ -103,5 +88,4 @@ export const RESOURCE_QUICK_LINKS = [
   { label: "Discord", href: SITE_CONFIG.links.discord },
   { label: "Devpost", href: SITE_CONFIG.links.devpost },
   { label: "Registration Form", href: SITE_CONFIG.links.register },
-  { label: "Venue Map", href: SITE_CONFIG.links.venueMap },
 ] as const

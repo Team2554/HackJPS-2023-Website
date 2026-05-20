@@ -18,7 +18,7 @@ const schedule: ScheduleDay[] = [
     label: "Day 1",
     dateLabel: "May 29",
     items: [
-      { time: "4:00 PM", event: "Check-in Begins (In-Person + Livestream Opens)" },
+      { time: "4:00 PM", event: "Check-in Begins (Virtual)" },
       { time: "4:15 PM", event: "Opening Ceremony (30 min)" },
       { time: "4:45 PM", event: "Code4Hope Workshop: Hack to Business (45 min)" },
       { time: "5:30 PM", event: "Working Period" },
