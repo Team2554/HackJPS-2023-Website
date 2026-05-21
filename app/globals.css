@@ -136,22 +136,10 @@
     @apply border-border outline-ring/50;
   }
   html {
-    scroll-behavior: smooth;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+    scroll-behavior: auto;
   }
   body {
     @apply bg-background text-foreground;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-  * {
-    scrollbar-width: none;
-  }
-  *::-webkit-scrollbar {
-    width: 0;
-    height: 0;
-    display: none;
   }
 }
 
@@ -179,4 +167,32 @@
 
 .animate-border-rotate {
   animation: border-rotate 4s linear infinite;
+}
+
+@keyframes banner-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes banner-scan {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+.animate-banner-marquee {
+  animation: banner-marquee 28s linear infinite;
+  will-change: transform;
+}
+
+.animate-banner-scan {
+  animation: banner-scan 5s ease-in-out infinite;
+  will-change: transform;
 }

@@ -14,7 +14,7 @@ export function FloatingResourcesButton() {
   }
 
   return (
-    <div className="group fixed bottom-4 right-4 z-50 scale-80 md:bottom-6 md:right-6 md:scale-90">
+    <div className="group fixed bottom-4 right-4 z-50 md:bottom-6 md:right-6">
       {/* Container with sharp corners and thin border */}
       <div className="relative border border-[#16a34a]/30 bg-[#16a34a]/5 p-1 backdrop-blur-sm">
         {/* Corner accents */}

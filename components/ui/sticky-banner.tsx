@@ -16,7 +16,6 @@ export const StickyBanner = ({
   const { scrollY } = useScroll();
 
   useMotionValueEvent(scrollY, "change", (latest) => {
-    console.log(latest);
     if (hideOnScroll && latest > 40) {
       setOpen(false);
     } else {
@@ -27,7 +26,7 @@ export const StickyBanner = ({
   return (
     <motion.div
       className={cn(
-        "sticky inset-x-0 top-0 z-40 flex min-h-10 w-full items-center justify-center bg-transparent px-4 py-1",
+        "sticky inset-x-0 top-0 z-40 flex min-h-10 w-full items-center justify-center overflow-hidden bg-transparent px-4 py-1",
         className,
       )}
       initial={{
@@ -52,10 +51,11 @@ export const StickyBanner = ({
         animate={{
           scale: 1,
         }}
-        className="absolute top-1/2 right-2 -translate-y-1/2 cursor-pointer"
+        className="absolute top-1/2 right-3 z-10 flex size-9 -translate-y-1/2 cursor-pointer items-center justify-center text-current transition-opacity hover:opacity-75 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-current/60"
+        aria-label="Dismiss banner"
         onClick={() => setOpen(!open)}
       >
-        <CloseIcon className="h-5 w-5 text-white" />
+        <CloseIcon className="h-5 w-5" />
       </motion.button>
     </motion.div>
   );
