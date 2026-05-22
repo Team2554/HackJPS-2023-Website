@@ -1,0 +1,247 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e6]: ❯
+  - main [ref=e8]:
+    - generic [ref=e9]:
+      - generic [ref=e10]:
+        - generic [ref=e11]: Venue Update
+        - generic [ref=e13]:
+          - generic [ref=e14]: HackJPS 2026 will now be held entirely virtual due to unspecified venue issues.
+          - generic [ref=e15]: HackJPS 2026 will now be held entirely virtual due to unspecified venue issues.
+          - generic [ref=e16]: HackJPS 2026 will now be held entirely virtual due to unspecified venue issues.
+          - generic [ref=e17]: HackJPS 2026 will now be held entirely virtual due to unspecified venue issues.
+      - button "Dismiss banner":
+        - img
+    - generic [ref=e19]:
+      - generic [ref=e20]:
+        - generic:
+          - img
+        - generic [ref=e21]:
+          - generic [ref=e22]:
+            - generic [ref=e23]:
+              - generic [ref=e24]: "LOCATION:"
+              - generic [ref=e25]: VIRTUAL
+            - generic [ref=e26]:
+              - generic [ref=e27]: "REMAINING:"
+              - generic [ref=e28]: 08:00:45
+          - generic:
+            - heading "HackJPS" [level=1]
+          - generic [ref=e29]:
+            - generic [ref=e30]:
+              - generic [ref=e31]: "HACKERS:"
+              - generic [ref=e32]: 500+
+            - generic [ref=e33]:
+              - generic [ref=e34]: "BUILDING:"
+              - generic [ref=e35]: 72 HOURS
+      - generic:
+        - generic:
+          - img "Hawk Statue"
+      - generic [ref=e36]:
+        - heading "HACKJPS" [level=1] [ref=e37]
+        - paragraph [ref=e44]: MAY 29-31, 2026 @ Virtual
+    - generic [ref=e50]:
+      - generic:
+        - generic:
+          - img "Hawk Statue Alternate View"
+      - generic [ref=e51]:
+        - heading "ABOUT HACKJPS" [level=2] [ref=e52]
+        - paragraph [ref=e53]:
+          - text: HackJPS is our annual flagship hackathon, bringing together the most creative minds for a weekend of intense learning and building. Whether you're a seasoned developer or just starting out, we provide the environment and resources you need to turn your ideas into reality.
+          - text: Participation will be open to middle and high school students (aged 13+) from Edison as well as from other locations or school districts. Participants may have any level of experience, or none at all. We are welcoming to beginners and experts alike!
+          - text: Additionally, participants will be able to attend virtual workshops hosted by sponsors or student organizations, exposing them to a multitude of other topics that might interest them.
+    - generic [ref=e56]:
+      - generic [ref=e57]:
+        - heading "EVENT SCHEDULE" [level=2] [ref=e58]
+        - link "View on DevPost" [ref=e59] [cursor=pointer]:
+          - /url: https://hackjps26.devpost.com/details/dates
+          - img [ref=e60]
+      - generic [ref=e64]:
+        - button "Day 1 - May 29" [ref=e65]:
+          - generic [ref=e66]: Day 1 - May 29
+        - button "Day 2 - May 30" [ref=e67]:
+          - generic [ref=e68]: Day 2 - May 30
+        - button "Day 3 - May 31" [ref=e69]:
+          - generic [ref=e70]: Day 3 - May 31
+      - generic [ref=e71]:
+        - generic [ref=e72]:
+          - generic [ref=e73]: 4:00 PM
+          - generic [ref=e74]: Check-in Begins (Virtual)
+        - generic [ref=e75]:
+          - generic [ref=e76]: 4:15 PM
+          - generic [ref=e77]: Opening Ceremony (30 min)
+        - generic [ref=e78]:
+          - generic [ref=e79]: 4:45 PM
+          - generic [ref=e80]: "Code4Hope Workshop: Hack to Business (45 min)"
+        - generic [ref=e81]:
+          - generic [ref=e82]: 5:30 PM
+          - generic [ref=e83]: Working Period
+        - generic [ref=e84]:
+          - generic [ref=e85]: 6:15 PM
+          - generic [ref=e86]: Dinner
+        - generic [ref=e87]:
+          - generic [ref=e88]: 6:45 PM
+          - generic [ref=e89]: Working Period
+        - generic [ref=e90]:
+          - generic [ref=e91]: 8:00 PM
+          - generic [ref=e92]: Day 1 Wrap-Up
+    - generic [ref=e96]:
+      - heading "OUR SPONSORS" [level=2] [ref=e97]
+      - paragraph [ref=e98]: Our sponsors make HackJPS possible by providing resources, mentorship, and opportunities for all participants.
+      - generic [ref=e100]:
+        - link "Visit Wolfram" [ref=e101] [cursor=pointer]:
+          - /url: https://www.wolfram.com/
+          - generic [ref=e102]:
+            - img "Wolfram logo"
+        - link "Visit nexos.ai" [ref=e107] [cursor=pointer]:
+          - /url: https://nexos.ai/
+          - generic [ref=e108]:
+            - img "nexos.ai logo"
+        - link "Visit Incogni" [ref=e113] [cursor=pointer]:
+          - /url: https://incogni.com/
+          - generic [ref=e114]:
+            - img "Incogni logo"
+        - link "Visit Interview Cake" [ref=e119] [cursor=pointer]:
+          - /url: https://www.interviewcake.com/
+          - generic [ref=e120]:
+            - img "Interview Cake logo"
+        - link "Visit NordProtect" [ref=e125] [cursor=pointer]:
+          - /url: https://nordprotect.com/
+          - generic [ref=e126]:
+            - img "NordProtect logo"
+        - link "Visit NordVPN" [ref=e131] [cursor=pointer]:
+          - /url: https://nordvpn.com/
+          - generic [ref=e132]:
+            - img "NordVPN logo"
+        - link "Visit NordPass" [ref=e137] [cursor=pointer]:
+          - /url: https://nordpass.com/
+          - generic [ref=e138]:
+            - img "NordPass logo"
+        - link "Visit Appwrite" [ref=e143] [cursor=pointer]:
+          - /url: https://appwrite.io/
+          - generic [ref=e144]:
+            - img "Appwrite logo"
+        - link "Visit Saily" [ref=e149] [cursor=pointer]:
+          - /url: https://saily.com/
+          - generic [ref=e150]:
+            - img "Saily logo"
+        - link "Visit Art of Problem Solving" [ref=e155] [cursor=pointer]:
+          - /url: https://artofproblemsolving.com/
+          - generic [ref=e156]:
+            - img "Art of Problem Solving logo"
+      - link "Become a sponsor" [ref=e162] [cursor=pointer]:
+        - /url: https://drive.google.com/file/d/1IbdjZukoFwasve6A_WyDpvfJGch2q9NL/view?usp=sharing
+        - generic [ref=e163]: Become a sponsor
+        - generic [ref=e164]: "->"
+    - generic [ref=e167]:
+      - generic [ref=e168]:
+        - heading "ARCHIVE" [level=2] [ref=e169]
+        - paragraph [ref=e170]: A look back at our previous events.
+      - generic [ref=e171]:
+        - generic [ref=e173]:
+          - heading "2025" [level=3] [ref=e175]
+          - generic [ref=e176]:
+            - paragraph [ref=e177]: Organized by Anumeha Haldar, Aditya Saini, Abir Modak, Trisha Panchangmath, Neerav Gupta, and Aryan Mittal
+            - generic [ref=e178]:
+              - link "Project Gallery" [ref=e179] [cursor=pointer]:
+                - /url: https://hackjps25.devpost.com/project-gallery
+                - generic [ref=e184]:
+                  - generic [ref=e185]: Project Gallery
+                  - img [ref=e186]
+              - link "Livestream Recording" [ref=e190] [cursor=pointer]:
+                - /url: https://youtu.be/kVIHTpSUaTw
+                - generic [ref=e195]:
+                  - generic [ref=e196]: Livestream Recording
+                  - img [ref=e197]
+        - generic [ref=e202]:
+          - heading "2024" [level=3] [ref=e204]
+          - generic [ref=e205]:
+            - paragraph [ref=e206]: Organized by Sai Voruganti, Troy Gunawardene, Naishadh Patel, and Ishaan Gupte with the support of JPS Robotics
+            - generic [ref=e207]:
+              - link "Project Gallery" [ref=e208] [cursor=pointer]:
+                - /url: https://hackjps-2024.devpost.com/project-gallery
+                - generic [ref=e213]:
+                  - generic [ref=e214]: Project Gallery
+                  - img [ref=e215]
+              - link "Livestream Recording" [ref=e219] [cursor=pointer]:
+                - /url: https://www.youtube.com/watch?v=PxcU1oWWCg4
+                - generic [ref=e224]:
+                  - generic [ref=e225]: Livestream Recording
+                  - img [ref=e226]
+              - link "LinkedIn Article" [ref=e230] [cursor=pointer]:
+                - /url: https://www.linkedin.com/pulse/hackjps-personal-recap-many-thanks-troy-gunawardene-rotee/
+                - generic [ref=e235]:
+                  - generic [ref=e236]: LinkedIn Article
+                  - img [ref=e237]
+        - generic [ref=e242]:
+          - heading "2023" [level=3] [ref=e244]
+          - generic [ref=e245]:
+            - paragraph [ref=e246]: Organized by Sai Voruganti, Troy Gunawardene, Naishadh Patel, and Ishaan Gupte
+            - generic [ref=e247]:
+              - link "Project Gallery" [ref=e248] [cursor=pointer]:
+                - /url: https://hackjps-2023.devpost.com/project-gallery
+                - generic [ref=e253]:
+                  - generic [ref=e254]: Project Gallery
+                  - img [ref=e255]
+              - link "Livestream Recording" [ref=e259] [cursor=pointer]:
+                - /url: https://drive.google.com/file/d/1GKiAEpitQPj1tC8l0EvxY1nGhErid1z8/view?usp=drive_link
+                - generic [ref=e264]:
+                  - generic [ref=e265]: Livestream Recording
+                  - img [ref=e266]
+              - link "GradeScout Blog Feature" [ref=e270] [cursor=pointer]:
+                - /url: https://blog.gradescout.live/hackjps-2023/
+                - generic [ref=e275]:
+                  - generic [ref=e276]: GradeScout Blog Feature
+                  - img [ref=e277]
+        - generic [ref=e282]:
+          - heading "2020" [level=3] [ref=e284]
+          - generic [ref=e285]:
+            - paragraph [ref=e286]: Organized by Venkat Kunaparaju, Aditya Chakka, Rishi Sinha, Aayush Gupta, Krish Naik, and Ashwin Saraswatula
+            - generic [ref=e287]:
+              - link "Project Gallery" [ref=e288] [cursor=pointer]:
+                - /url: https://hackjps.devpost.com/project-gallery
+                - generic [ref=e293]:
+                  - generic [ref=e294]: Project Gallery
+                  - img [ref=e295]
+              - link "Opening Ceremony" [ref=e299] [cursor=pointer]:
+                - /url: https://www.youtube.com/watch?v=at3Q_unZvBo
+                - generic [ref=e304]:
+                  - generic [ref=e305]: Opening Ceremony
+                  - img [ref=e306]
+    - generic [ref=e311]:
+      - generic [ref=e313]:
+        - heading "COMMON QUESTIONS" [level=2] [ref=e314]
+        - generic [ref=e315]:
+          - article [ref=e316]:
+            - button "Who can participate in HackJPS? [+]" [ref=e317] [cursor=pointer]:
+              - generic [ref=e322]:
+                - generic [ref=e323]: Who can participate in HackJPS?
+                - generic [ref=e324]: "[+]"
+          - article [ref=e325]:
+            - button "Do I need a team to participate? [+]" [ref=e326] [cursor=pointer]:
+              - generic [ref=e331]:
+                - generic [ref=e332]: Do I need a team to participate?
+                - generic [ref=e333]: "[+]"
+          - article [ref=e334]:
+            - button "What should I bring? [+]" [ref=e335] [cursor=pointer]:
+              - generic [ref=e340]:
+                - generic [ref=e341]: What should I bring?
+                - generic [ref=e342]: "[+]"
+          - article [ref=e343]:
+            - button "Is there a cost to participate? [+]" [ref=e344] [cursor=pointer]:
+              - generic [ref=e349]:
+                - generic [ref=e350]: Is there a cost to participate?
+                - generic [ref=e351]: "[+]"
+          - article [ref=e352]:
+            - button "What if I've never been to a hackathon before? [+]" [ref=e353] [cursor=pointer]:
+              - generic [ref=e358]:
+                - generic [ref=e359]: What if I've never been to a hackathon before?
+                - generic [ref=e360]: "[+]"
+          - article [ref=e361]:
+            - button "Can I start working on my project before the event? [+]" [ref=e362] [cursor=pointer]:
+              - generic [ref=e367]:
+                - generic [ref=e368]: Can I start working on my project before the event?
+                - generic [ref=e369]: "[+]"
+      - heading "HackJPS" [level=2] [ref=e373]: HACKJPS
+  - link "HACKER RESOURCES >" [ref=e380] [cursor=pointer]:
+    - /url: /resources
+    - text: HACKER RESOURCES
+    - generic [ref=e381]: ">"
