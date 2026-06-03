@@ -54,7 +54,7 @@ const sponsors: Sponsor[] = [
   },
   {
     name: "NordVPN",
-    href: "https://nordvpn.com/",
+    href: "https://nordvpn.com/hackathons",
     src: "/sponsors/nordvpn.png",
     width: 1600,
     height: 746,
