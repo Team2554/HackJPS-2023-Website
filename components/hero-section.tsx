@@ -1,6 +1,7 @@
 import { Navigation } from "./navigation";
 import Image from "next/image";
 import { SITE_CONFIG } from "@/lib/site-config";
+import { SafeExternalLink } from "@/components/safe-external-link";
 
 export function HeroSection() {
   return (
@@ -48,10 +49,25 @@ export function HeroSection() {
               {SITE_CONFIG.eventDatesLabel.toUpperCase()} @{" "}
               {SITE_CONFIG.locationShort}
             </p>
+            <p className="mt-2 text-xs font-bold tracking-[0.22em] text-accent uppercase md:text-sm">
+              // Event Concluded &mdash; Thanks For Hacking
+            </p>
           </div>
         </div>
 
-        {/* CTA buttons removed */}
+        {/* Post-event CTA */}
+        <div
+          className="mt-6 self-start"
+          style={{ fontFamily: "'ShareTechMono', monospace" }}
+        >
+          <SafeExternalLink
+            href={SITE_CONFIG.links.devpostGallery}
+            className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-[0.18em] text-accent transition-colors hover:text-accent/80 md:text-base"
+          >
+            <span>View the 2026 Projects</span>
+            <span aria-hidden="true">-&gt;</span>
+          </SafeExternalLink>
+        </div>
       </div>
 
       {/* Scroll indicator */}

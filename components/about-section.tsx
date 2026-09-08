@@ -28,10 +28,13 @@ export function AboutSection() {
             HackJPS is our annual flagship hackathon, bringing together the most creative minds for a weekend of intense learning and building. Whether you're a seasoned developer or just starting out, we provide the environment and resources you need to turn your ideas into reality.
             <br />
             <br />
-            Participation will be open to middle and high school students (aged 13+) from Edison as well as from other locations or school districts. Participants may have any level of experience, or none at all. We are welcoming to beginners and experts alike!
+            HackJPS 2026 wrapped up on May 31, 2026. Participation was open to middle and high school students (aged 13+) from Edison as well as from other locations and school districts, at any level of experience or none at all &mdash; we were welcoming to beginners and experts alike!
             <br />
             <br />
-            Additionally, participants will be able to attend virtual workshops hosted by sponsors or student organizations, exposing them to a multitude of other topics that might interest them.
+            Participants also attended virtual workshops hosted by our sponsors and student organizations, exposing them to a multitude of other topics that might interest them.
+            <br />
+            <br />
+            Thank you to everyone who built with us. Keep an eye on this page for news about the next HackJPS.
           </p>
         </div>
       </div>

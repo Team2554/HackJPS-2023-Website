@@ -14,7 +14,7 @@ export function RegisterSection() {
           <div className="relative z-10 text-center">
             <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-accent/20 px-4 py-2">
               <Sparkles className="h-4 w-4 text-accent" />
-              <span className="text-sm font-medium text-accent">Limited spots available</span>
+              <span className="text-sm font-medium text-accent">Registration</span>
             </div>
             
             <h2 className="font-display text-3xl font-bold tracking-tight text-foreground sm:text-4xl md:text-5xl">
@@ -22,8 +22,7 @@ export function RegisterSection() {
             </h2>
             
             <p className="mx-auto mt-6 max-w-xl text-lg text-muted-foreground">
-              Join {SITE_CONFIG.hackerCountLabel} innovators for a full weekend of hacking, learning, and fun. 
-              Registration closes {SITE_CONFIG.registrationClosesLabel}.
+              Join fellow innovators for a full weekend of hacking, learning, and fun.
             </p>
 
             <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">

@@ -1,45 +1,6 @@
-"use client"
-
-import { useState, useEffect } from "react"
 import { SITE_CONFIG } from "@/lib/site-config"
 
-type TimeLeft = {
-  days: number
-  hours: number
-  minutes: number
-}
-
-function getTimeLeft(targetDateMs: number): TimeLeft {
-  const now = Date.now()
-  const distance = targetDateMs - now
-
-  if (distance <= 0) {
-    return { days: 0, hours: 0, minutes: 0 }
-  }
-
-  return {
-    days: Math.floor(distance / (1000 * 60 * 60 * 24)),
-    hours: Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
-    minutes: Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
-  }
-}
-
 export function Navigation() {
-  const targetDateMs = Date.parse(SITE_CONFIG.countdownTargetIso)
-  const [timeLeft, setTimeLeft] = useState<TimeLeft>(() => getTimeLeft(targetDateMs))
-
-  useEffect(() => {
-    setTimeLeft(getTimeLeft(targetDateMs))
-
-    const timer = setInterval(() => {
-      setTimeLeft(getTimeLeft(targetDateMs))
-    }, 30_000)
-
-    return () => clearInterval(timer)
-  }, [targetDateMs])
-
-  const formatNumber = (num: number) => num.toString().padStart(2, '0')
-
   return (
     <div className="relative hidden w-full px-0 pt-4 pb-12 font-mono tracking-[0.2em] uppercase text-[#c7c3b5] md:block">
       {/* SVG Line with geometric kink - Increased stroke weight and moved branding below */}
@@ -50,7 +11,7 @@ export function Navigation() {
       </div>
 
       <div className="relative flex w-full justify-between items-start pt-12">
-        {/* Left Block: Location & Timer */}
+        {/* Left Block: Location & Dates */}
         <div className="flex flex-col items-start gap-1 text-left" style={{ fontFamily: "'ShareTechMono', monospace" }}>
           <div className="flex gap-2 items-baseline text-[10px] md:text-xs">
             <span className="font-bold">LOCATION:</span>
@@ -59,9 +20,9 @@ export function Navigation() {
               <span className="lg:hidden">{SITE_CONFIG.locationShort}</span>
             </span>
           </div>
-          <div className="flex gap-2 items-baseline text-[10px] md:text-xs font-bold tracking-[0.2em] tabular-nums">
-            <span>REMAINING:</span>
-            <span>{formatNumber(timeLeft.days)}:{formatNumber(timeLeft.hours)}:{formatNumber(timeLeft.minutes)}</span>
+          <div className="flex gap-2 items-baseline text-[10px] md:text-xs">
+            <span className="font-bold">DATES:</span>
+            <span className="font-bold">{SITE_CONFIG.eventDatesLabel.toUpperCase()}</span>
           </div>
         </div>
 
@@ -72,11 +33,11 @@ export function Navigation() {
           </h1>
         </div>
 
-        {/* Right Block: Hackers & Duration */}
+        {/* Right Block: Status & Duration */}
         <div className="flex flex-col items-end gap-1 text-right" style={{ fontFamily: "'ShareTechMono', monospace" }}>
           <div className="flex w-full gap-2 justify-end items-baseline text-[10px] md:text-xs">
-            <span className="font-bold">HACKERS:</span>
-            <span className="font-bold">{SITE_CONFIG.hackerCountLabel}</span>
+            <span className="font-bold">STATUS:</span>
+            <span className="font-bold">{SITE_CONFIG.eventStatusLabel.toUpperCase()}</span>
           </div>
           <div className="flex w-full gap-2 justify-end items-baseline text-[10px] md:text-xs">
             <span className="font-bold">BUILDING:</span>

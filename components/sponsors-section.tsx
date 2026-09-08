@@ -92,6 +92,14 @@ const sponsors: Sponsor[] = [
     height: 111,
     logoClassName: "max-h-[92px] max-w-[244px]",
   },
+  {
+    name: "Code4Hope",
+    href: "https://code4hope.net/",
+    src: "/sponsors/code4hope.png",
+    width: 128,
+    height: 128,
+    logoClassName: "max-h-[120px] max-w-[120px]",
+  },
 ]
 
 export function SponsorsSection() {
@@ -104,7 +112,7 @@ export function SponsorsSection() {
           </h2>
 
           <p className="mt-6 font-subheading text-[28px] font-[300] leading-relaxed text-muted-foreground w-full max-w-none tracking-wide">
-            Our sponsors make HackJPS possible by providing resources, mentorship, and opportunities for all participants.
+            Our sponsors made HackJPS 2026 possible by providing resources, mentorship, and opportunities for every participant.
           </p>
 
           <div className="mt-16">
@@ -144,7 +152,7 @@ export function SponsorsSection() {
               href={SITE_CONFIG.links.sponsorContact}
               className="inline-flex items-center gap-2 text-accent transition-colors hover:text-accent/80"
             >
-              <span>Become a sponsor</span>
+              <span>Sponsor a future HackJPS</span>
               <span aria-hidden="true">-&gt;</span>
             </a>
           </div>

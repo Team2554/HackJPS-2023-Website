@@ -85,7 +85,7 @@ export default function ResourcesPage() {
           </div>
 
           <div className="justify-self-end text-right font-mono text-[10px] font-bold uppercase tracking-[0.22em] text-[#c7c3b5]/90 md:text-xs">
-            <p>Hackers: {SITE_CONFIG.hackerCountLabel}</p>
+            <p>Status: {SITE_CONFIG.eventStatusLabel}</p>
             <p className="mt-1">Building: {SITE_CONFIG.buildDurationLabel}</p>
           </div>
         </div>

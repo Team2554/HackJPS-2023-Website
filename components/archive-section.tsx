@@ -5,6 +5,14 @@ import { SafeExternalLink } from "@/components/safe-external-link"
 
 const archiveData = [
   {
+    year: "2026",
+    organizers: "Aryan Mittal, Trisha Panchangmath, and Neerav Gupta",
+    links: [
+      { label: "Project Gallery", href: "https://hackjps26.devpost.com/project-gallery" },
+      { label: "Devpost", href: "https://hackjps26.devpost.com" },
+    ],
+  },
+  {
     year: "2025",
     organizers: "Anumeha Haldar, Aditya Saini, Abir Modak, Trisha Panchangmath, Neerav Gupta, and Aryan Mittal",
     links: [

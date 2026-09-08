@@ -5,16 +5,20 @@ import { SITE_CONFIG } from "@/lib/site-config"
 
 const faqs = [
   {
+    question: "Is HackJPS 2026 over?",
+    answer: "Yes. HackJPS 2026 ran virtually from May 29-31, 2026 and has now concluded. You can browse everything that was built in the project gallery on Devpost, and check the archive below for our past events.",
+  },
+  {
     question: "Who can participate in HackJPS?",
-    answer: "HackJPS is open to all high school and middle school students ages 13+. Whether you're a beginner or experienced developer, you're welcome to join!",
+    answer: "HackJPS is open to all high school and middle school students ages 13+. Whether you're a beginner or an experienced developer, you're welcome to join us at the next one!",
   },
   {
     question: "Do I need a team to participate?",
     answer: "No! You can register as an individual and we'll help you find teammates during our team formation session. Teams can have up to 4 members.",
   },
   {
-    question: "What should I bring?",
-    answer: "Bring your laptop, charger, any hardware you want to hack with, toiletries, and whatever you need to stay comfortable. We'll provide WiFi and food and drink will be available for purchase throughout the event!",
+    question: "What did I need to bring?",
+    answer: "HackJPS 2026 ran entirely online, so all you needed was your laptop, a charger, any hardware you wanted to hack with, and a stable internet connection.",
   },
   {
     question: "Is there a cost to participate?",
@@ -22,11 +26,11 @@ const faqs = [
   },
   {
     question: "What if I've never been to a hackathon before?",
-    answer: "That's totally fine! About 40% of our participants are first-time hackers. We have beginner workshops, mentors on-site, and a supportive community to help you succeed.",
+    answer: "That's totally fine! A large share of our participants are first-time hackers. We run beginner workshops, staff the event with mentors, and keep a supportive community around to help you succeed.",
   },
   {
-    question: "Can I start working on my project before the event?",
-    answer: "No. To keep things fair, all coding must be done during the hackathon. However, you can brainstorm ideas and form teams beforehand.",
+    question: "Could I start working on my project before the event?",
+    answer: "No. To keep things fair, all coding had to be done during the hackathon. Brainstorming ideas and forming teams beforehand was always allowed.",
   },
 ]
 
