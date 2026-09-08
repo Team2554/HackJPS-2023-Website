@@ -30,34 +30,9 @@ export function HeroSection() {
           {SITE_CONFIG.siteName.toUpperCase()}
         </h1>
 
-        {/* New event box styled after image */}
-        <div
-          className="mt-8 relative inline-block self-start"
-          style={{ fontFamily: "'ShareTechMono', monospace" }}
-        >
-          {/* Corner accents - Detached from rectangle */}
-          <div className="absolute -left-[6px] -top-[6px] h-3 w-3 border-l-2 border-t-2 border-foreground/80" />
-          <div className="absolute -right-[6px] -top-[6px] h-3 w-3 border-r-2 border-t-2 border-foreground/80" />
-          <div className="absolute -bottom-[6px] -left-[6px] h-3 w-3 border-b-2 border-l-2 border-foreground/80" />
-          <div className="absolute -bottom-[6px] -right-[6px] h-3 w-3 border-b-2 border-r-2 border-foreground/80" />
-
-          <div className="border border-foreground/15 bg-foreground/5 px-6 py-3 backdrop-blur-sm">
-            <p
-              className="text-lg md:text-xl font-bold tracking-[0.1em] text-foreground uppercase"
-              style={{ fontFamily: "ShareTechMono, monospace" }}
-            >
-              {SITE_CONFIG.eventDatesLabel.toUpperCase()} @{" "}
-              {SITE_CONFIG.locationShort}
-            </p>
-            <p className="mt-2 text-xs font-bold tracking-[0.22em] text-accent uppercase md:text-sm">
-              // Event Concluded &mdash; Thanks For Hacking
-            </p>
-          </div>
-        </div>
-
         {/* Post-event CTA */}
         <div
-          className="mt-6 self-start"
+          className="mt-8 self-start"
           style={{ fontFamily: "'ShareTechMono', monospace" }}
         >
           <SafeExternalLink
